@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTranslateCookie('en');
                 window.location.reload();
             } else if (text === 'ru' && currentLang !== 'ru') {
-                setTranslateCookie('ru'); removeTranslateCookie();
+                setTranslateCookie('ru');
                 window.location.reload();
             }
         }
