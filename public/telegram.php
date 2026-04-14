@@ -11,8 +11,9 @@ header("Access-Control-Allow-Methods: POST");
 // ==========================================
 // 1. УКАЖИТЕ ВАШИ ДАННЫЕ TELEGRAM НИЖЕ
 // ==========================================
-$TELEGRAM_TOKEN = "ВАШ_ТОКЕН_БОТА";
-$CHAT_ID = "ВАШ_CHAT_ID";
+$TELEGRAM_TOKEN = "8627909617:AAEt8vm6dDifjUgJQuPH6wbeDPgZjXEJM-Y";
+$CHAT_ID = "-8724690379";
+
 // ==========================================
 
 // If the user hasn't set the token yet, return an error safely
