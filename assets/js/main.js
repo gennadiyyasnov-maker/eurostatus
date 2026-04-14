@@ -1,3 +1,4 @@
+import './lang.js';
 window.initEuroStatusApp = function() {
     // Logic for sticky header - check to prevent duplicate listeners
     if (!window.headerScrollInitialized) {
