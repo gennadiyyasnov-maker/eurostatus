@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+<meta charset="utf-8">
+<title>Font Matcher</title>
+<style>
+body { font-family: sans-serif; background: #1a1a1a; color: #0B2046; padding: 40px; }
+.controls { 
+  background: #2a2a2a; padding: 20px; border-radius: 8px; margin-bottom: 30px; 
+  display: flex; gap: 20px; align-items: center; flex-wrap: wrap; 
+}
+select, input { padding: 8px; font-size: 16px; border-radius: 4px; border: 1px solid #555; background: #333; color: white;}
+.display-area { background: white; color: black; padding: 50px; border-radius: 4px; display: inline-block; min-width: 500px;}
+</style>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+<body>
+  <h2>Лаборатория подбора шрифта</h2>
+  <p>Я собрал все предустановленные шрифты Windows, которые когда-либо использовались в госорганах ЕС. Давайте найдем нужный!</p>
+  
+  <div class="controls">
+    <div>
+      <label>Шрифт:</label>
+      <select id="font-select" onchange="updateCSS()">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Baskerville Old Face">Baskerville Old Face</option>
+        <option value="Bodoni MT">Bodoni MT</option>
+        <option value="Book Antiqua">Book Antiqua</option>
+        <option value="Bookman Old Style">Bookman Old Style</option>
+        <option value="Cambria">Cambria</option>
+        <option value="Century">Century</option>
+        <option value="Century Schoolbook">Century Schoolbook</option>
+        <option value="Constantia">Constantia</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Didot">Didot</option>
+        <option value="Garamond">Garamond</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Goudy Old Style">Goudy Old Style</option>
+        <option value="Lucida Bright">Lucida Bright</option>
+        <option value="Palatino Linotype">Palatino Linotype</option>
+        <option value="Perpetua">Perpetua</option>
+        <option value="Rockwell">Rockwell</option>
+        <option value="Sylfaen">Sylfaen</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>Размер:</label>
+      <input type="range" id="size-slider" min="20" max="100" value="70" oninput="updateCSS()">
+    </div>
+    
+    <div>
+      <label>Жирность:</label>
+      <select id="weight-select" onchange="updateCSS()">
+        <option value="normal">Обычный (Regular)</option>
+        <option value="bold">Жирный (Bold)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="display-area">
+    <div id="test-text" style="font-family: 'Times New Roman'; font-size: 70px;">MINISTERUL</div>
+  </div>
+
+<script>
+function updateCSS() {
+  document.getElementById('test-text').style.fontFamily = document.getElementById('font-select').value;
+  document.getElementById('test-text').style.fontSize = document.getElementById('size-slider').value + 'px';
+  document.getElementById('test-text').style.fontWeight = document.getElementById('weight-select').value;
+}
+</script>
+
+    <!-- Crisp Setup -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d4ad84eb-f3ba-484b-9485-a772c7601dc2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  
+<!-- Standardized Form JS -->
+<script>
+function customSelectOptionUnif(inputId, textId, menuId, wrapperId, value, text) {
+    var inp = document.getElementById(inputId);
+    if(inp) inp.value = value;
+    var txt = document.getElementById(textId);
+    if(txt) {
+        txt.innerText = text;
+        txt.style.color = '#ffffff';
+    }
+    var menu = document.getElementById(menuId);
+    if(menu) menu.classList.remove('show');
+    var trigger = document.querySelector('#' + wrapperId + ' .custom-select-trigger');
+    if(trigger) trigger.classList.remove('active');
+}
+document.addEventListener('click', function(e) {
+    var dropdowns = ['unif-dropdown-1', 'unif-dropdown-2'];
+    dropdowns.forEach(function(pid) {
+        var wrapper = document.getElementById(pid);
+        if (wrapper && !wrapper.contains(e.target)) {
+            var m = document.getElementById(pid.replace('dropdown', 'dropdown-menu'));
+            if(m) m.classList.remove('show');
+            var tr = document.querySelector('#' + pid + ' .custom-select-trigger');
+            if(tr) tr.classList.remove('active');
+        }
+    });
+});
+</script>
+
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+<script src="./assets/js/lang.js"></script>
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

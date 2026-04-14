@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroStatus | О Компании</title>
+    <!-- Подключаем основной CSS файл -->
+    <link rel="stylesheet" href="./assets/css/style.css?auto=123">
+      <link rel="icon" type="image/png" href="./assets/images/favicon.png?v=2">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+<body>
+  <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О компании</a></li>
+            <li class="has-dropdown">
+          <a href="#services" class="active">Услуги <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/citizenship-eu">Гражданство ЕС</a></li>
+            <li><a href="/residency">ВНЖ и ПМЖ в Европе</a></li>
+            <li><a href="/investment" class="active">Второе гражданство за инвестиции</a></li>
+            <li><a href="/visas">Визы и иммиграция</a></li>
+          </ul>
+        </li>
+        <li><a href="/reviews">Отзывы</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://t.me/Eurostatus_EU" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+          <div class="lang-switch">
+             <a href="/" class="active">RU</a><span class="divider">|</span><a href="/en">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Индивидуальная консультация'); return false;" class="btn-primary">Консультация</a>
+        </div>
+      </div>
+    </header>
+    <main style="background-color: #ffffff; color: #1A202C;">
+
+        <!-- 1. HERO BLOCK -->
+    <section class="faq-hero" style="background: url('./assets/images/hero_investment_light.png') center/cover no-repeat; position: relative; padding: 180px 0 160px;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(180deg, rgba(11,32,70,0.9) 0%, rgba(11,32,70,0.7) 100%); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+          
+          <div class="fade-in-up" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px;">
+            <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+            <span style="color: var(--gold-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">ИНВЕСТИЦИОННЫЕ ПРОГРАММЫ</span>
+            <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+          </div>
+          
+          <h1 class="fade-in-up delay-1" style="color: #fff; font-size: 4.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 25px; line-height: 1.1; font-family: 'Times New Roman', serif;">Второе гражданство за инвестиции</h1>
+          
+          <p class="fade-in-up delay-2" style="color: rgba(255,255,255,0.85); font-size: 1.25rem; line-height: 1.6; max-width: 800px; margin: 0 auto 40px;">Прямой путь к паспорту ЕС или стран Карибского бассейна через инвестиции. Абсолютная свобода перемещения, безопасность активов и оптимизация налогов для вас и вашей семьи.</p>
+          
+        </div>
+    </section>
+
+        <!-- 2. WHY INVEST IN SECOND CITIZENSHIP -->
+        <section class="section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 style="color: #0B2046;">Зачем инвестировать во второе гражданство?</h2>
+                    <p style="color: #4A5568;">Паспорт другой страны — это лучший инструмент для управления рисками.</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-top: 50px;">
+                    <!-- Базовые выгоды -->
+                    <div style="background: #f8f9fa; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column;">
+                        <img src="./assets/images/investment_benefit_mobility.png" alt="Свобода путешествий" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="padding: 40px;">
+                            <h3 style="color: #0B2046; font-size: 1.8rem; margin-bottom: 15px; font-family: 'Playfair Display', serif;">Глобальная свобода перемещения</h3>
+                            <p style="color: #4A5568; font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">Инвестиционные паспорта (Мальта или Карибы) предоставляют безвизовый доступ в более чем 140 стран мира, включая Шенгенскую зону, Великобританию, и облегчают получение многолетних виз в США и Канаду.</p>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Европа и Великобритания без виз</li>
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Открытие визы B1/B2 в США</li>
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Постоянное проживание в лучших странах</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Финансы -->
+                    <div style="background: #f8f9fa; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column;">
+                        <img src="./assets/images/investment_benefit_protection.png" alt="Защита активов" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="padding: 40px;">
+                            <h3 style="color: #0B2046; font-size: 1.8rem; margin-bottom: 15px; font-family: 'Playfair Display', serif;">Безопасность и защита капитала</h3>
+                            <p style="color: #4A5568; font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">Запасной паспорт обеспечивает «План Б» для защиты вашей семьи и активов в случае политической или экономической нестабильности. Налоговая оптимизация и конфиденциальность.</p>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Открытие счетов в стабильных мировых банках</li>
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Бизнес регистрация за рубежом</li>
+                                <li style="display: flex; gap: 10px; color: #4A5568;"><strong style="color: var(--gold-main);">✓</strong> Отсутствие налогов на мировой доход (в ряде стран)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TOP PROGRAMS GRID -->
+        <section id="programs" class="section-padding" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 style="color: #0B2046;">Популярные программы получения паспорта</h2>
+                    <p style="color: #4A5568;">Сравните лучшие варианты по сумме инвестиций и срокам оформления.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 50px;">
+                    
+                    <!-- 1. Europe -->
+                    <div class="image-benefit-card" style="box-shadow: 0 15px 40px rgba(0,0,0,0.08);">
+                        <img src="./assets/images/investment_europe.png" alt="Гражданство Европы за инвестиции">
+                        <div class="content" style="background: #ffffff;">
+                            <h3 style="color: #0B2046 !important; margin-bottom: 5px;">Гражданство ЕС (Мальта)</h3>
+                            <span style="color: var(--gold-main); font-weight: bold; font-size: 1rem; display: block; margin-bottom: 15px;">Инвестиции от €690,000</span>
+                            <p style="color: #4A5568 !important;">Единственная официальная программа в Европе, позволяющая получить паспорт ЕС напрямую через существенный вклад в экономику (Фонд национального развития) за 12 месяцев.</p>
+                            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Срок оформления</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">12 - 36 мес.</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Безвиз</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">170+ стран (вкл. США)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Caribbean -->
+                    <div class="image-benefit-card" style="box-shadow: 0 15px 40px rgba(0,0,0,0.08);">
+                        <img src="./assets/images/investment_caribbean.png" alt="Паспорт Карибов">
+                        <div class="content" style="background: #ffffff;">
+                            <h3 style="color: #0B2046 !important; margin-bottom: 5px;">Карибские страны</h3>
+                            <span style="color: var(--gold-main); font-weight: bold; font-size: 1rem; display: block; margin-bottom: 15px;">Инвестиции от $200,000</span>
+                            <p style="color: #4A5568 !important;">Быстрый и доступный путь к мощному паспорту через покупку одобренной недвижимости или взнос в госфонд. Антигуа и Барбуда, Гренада, Сент-Люсия, Вануату.</p>
+                            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Срок оформления</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">3 - 6 мес.</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Безвиз</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">140+ стран (вкл. Шенген)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Middle East / Turkey -->
+                    <div class="image-benefit-card" style="box-shadow: 0 15px 40px rgba(0,0,0,0.08);">
+                        <img src="./assets/images/investment_middle_east.png" alt="Гражданство Турции">
+                        <div class="content" style="background: #ffffff;">
+                            <h3 style="color: #0B2046 !important; margin-bottom: 5px;">Турция и Восток</h3>
+                            <span style="color: var(--gold-main); font-weight: bold; font-size: 1rem; display: block; margin-bottom: 15px;">Инвестиции от $400,000</span>
+                            <p style="color: #4A5568 !important;">Полноценное гражданство Турции за покупку ликвидной недвижимости. Выгодное географическое положение для бизнеса, хорошая медицина и лояльная банковская система.</p>
+                            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Срок оформления</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">6 - 8 мес.</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+                                    <span style="color: #718096; font-size: 0.9rem;">Безвиз</span>
+                                    <span style="color: #0B2046; font-weight: bold; font-size: 0.95rem;">110+ стран (вкл. Японию)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+    
+        <!-- 4. COMPARISON TABLE -->
+        <section class="section-padding" style="background: #ffffff;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 style="color: #0B2046;">Ключевые параметры программ</h2>
+                    <p style="color: #4A5568;">Прямое сравнение условий для принятия взвешенного решения.</p>
+                </div>
+                
+                <div style="overflow-x: auto; margin-top: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff;">
+                        <thead>
+                            <tr style="background: #f8f9fa; border-bottom: 2px solid #e2e8f0;">
+                                <th style="padding: 20px; color: #0B2046; font-family: 'Times New Roman', serif; font-size: 1.2rem; min-width: 200px;">Параметр</th>
+                                <th style="padding: 20px; color: #0B2046; font-family: 'Times New Roman', serif; font-size: 1.2rem; min-width: 200px;">Мальта (ЕС)</th>
+                                <th style="padding: 20px; color: #0B2046; font-family: 'Times New Roman', serif; font-size: 1.2rem; min-width: 200px;">Карибский бассейн</th>
+                                <th style="padding: 20px; color: #0B2046; font-family: 'Times New Roman', serif; font-size: 1.2rem; min-width: 200px;">Турция</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #edf2f7;">
+                                <td style="padding: 20px; font-weight: 600; color: #4A5568;">Минимальные инвестиции</td>
+                                <td style="padding: 20px; color: #4A5568;"><span style="color: #276749; font-weight: bold;">от €690,000</span> (Взнос)</td>
+                                <td style="padding: 20px; color: #4A5568;"><span style="color: #276749; font-weight: bold;">от $200,000</span> (Фонд)</td>
+                                <td style="padding: 20px; color: #4A5568;"><span style="color: #276749; font-weight: bold;">от $400,000</span> (Недвижимость)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #edf2f7;">
+                                <td style="padding: 20px; font-weight: 600; color: #4A5568;">Возврат капитала (ROI)</td>
+                                <td style="padding: 20px; color: #4A5568;">Безвозвратный взнос</td>
+                                <td style="padding: 20px; color: #4A5568;">Через 5-7 лет (при покупке доли)</td>
+                                <td style="padding: 20px; color: #4A5568;">Через 3 года <span style="color: var(--gold-main);">(Высокая ликвидность)</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #edf2f7;">
+                                <td style="padding: 20px; font-weight: 600; color: #4A5568;">Безвизовый доступ</td>
+                                <td style="padding: 20px; color: #4A5568;">170+ стран (Шенген, UK, USA)</td>
+                                <td style="padding: 20px; color: #4A5568;">140+ стран (Шенген, UK)</td>
+                                <td style="padding: 20px; color: #4A5568;">110+ стран (Япония, Ю.Корея)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #edf2f7;">
+                                <td style="padding: 20px; font-weight: 600; color: #4A5568;">Срок оформления</td>
+                                <td style="padding: 20px; color: #4A5568;">12 - 36 мес.</td>
+                                <td style="padding: 20px; color: #4A5568;"><span style="color: var(--gold-main); font-weight: bold;">3 - 6 мес.</span></td>
+                                <td style="padding: 20px; color: #4A5568;">6 - 8 мес.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. DUE DILIGENCE & ESCROW BANNER -->
+        <section style="background: #0B2046; border-top: 1px solid rgba(255,255,255,0.1); padding: 70px 0;">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="color: #ffffff; margin-bottom: 20px; font-family: 'Times New Roman', serif; font-size: 2.2rem;">Строгая Конфиденциальность & AML</h2>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px;">
+                            Мы ценим вашу репутацию. До старта работы мы проводим закрытый внутренний комплаенс (Due Diligence), чтобы гарантировать 100% одобрение в государственных органах.
+                        </p>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px;">
+                            <li style="display: flex; align-items: center; gap: 15px; color: #ffffff; font-weight: 600;">
+                                <span style="color: var(--gold-main); display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; opacity: 0.8;">🔒</span>
+                                Строгий договор NDA с каждым клиентом
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 15px; color: #ffffff; font-weight: 600;">
+                                <span style="color: var(--gold-main); display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; opacity: 0.8;">🏦</span>
+                                Финансовая защита через британские эскроу-счета
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. INVESTMENT ROADMAP -->
+        <section class="section-padding" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 style="color: #0B2046;">Дорожная карта инвестора</h2>
+                    <p style="color: #4A5568;">4 прозрачных шага к вашему новому паспорту.</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px;">
+                    <!-- Step 1 -->
+                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -15px; right: -15px; font-size: 6rem; font-weight: 900; color: rgba(11,32,70,0.03); line-height: 1; font-family: 'Times New Roman', serif;">1</div>
+                        <h4 style="color: #0B2046; font-size: 1.3rem; margin-bottom: 15px;">Предварительная проверка</h4>
+                        <p style="color: #4A5568; line-height: 1.6; font-size: 1rem;">Наши британские офицеры AML проводят бесплатную проверку вашей репутации для исключения рисков отказа.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -15px; right: -15px; font-size: 6rem; font-weight: 900; color: rgba(11,32,70,0.03); line-height: 1; font-family: 'Times New Roman', serif;">2</div>
+                        <h4 style="color: #0B2046; font-size: 1.3rem; margin-bottom: 15px;">Выбор инвестиции</h4>
+                        <p style="color: #4A5568; line-height: 1.6; font-size: 1rem;">Мы подбираем ликвидную недвижимость или осуществляем безопасный перевод в правительственный фонд через эскроу.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -15px; right: -15px; font-size: 6rem; font-weight: 900; color: rgba(11,32,70,0.03); line-height: 1; font-family: 'Times New Roman', serif;">3</div>
+                        <h4 style="color: #0B2046; font-size: 1.3rem; margin-bottom: 15px;">Подача досье</h4>
+                        <p style="color: #4A5568; line-height: 1.6; font-size: 1rem;">Юристы EuroStatus переводят, апостилируют и подают правильный пакет документов напрямую в Министерство соответствующей страны.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div style="background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: -15px; right: -15px; font-size: 6rem; font-weight: 900; color: rgba(11,32,70,0.03); line-height: 1; font-family: 'Times New Roman', serif;">4</div>
+                        <h4 style="color: var(--gold-main); font-size: 1.3rem; margin-bottom: 15px;">Паспорт получен</h4>
+                        <p style="color: #4A5568; line-height: 1.6; font-size: 1rem;">Сертификат о натурализации и второй паспорт доставляются вам лично в руки в удобную точку мира, без необходимости приезда в страну.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!-- 8. FINAL CTA FORM -->
+    <section class="cta-form-section" id="consultation">
+        <div class="container">
+            <div class="cta-form-wrapper">
+                <div class="cta-text">
+                    <h2>Узнайте свои шансы на гражданство ЕС</h2>
+                    <p>Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+                </div>
+                <form class="lead-form" action="#" method="POST">
+    <input placeholder="Ваше имя" name="name" required="" type="text"/>
+    <input placeholder="Номер телефона" name="phone" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-1">
+        <input type="hidden" name="service_type" id="hidden_service_type_1" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-1').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-1" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-1">
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+    <button class="btn-primary" style="width: 100%; margin-top: 5px;" type="submit">Оставить заявку</button>
+    <div style="font-size: 0.75rem; text-align: center; color: rgba(255,255,255,0.4); margin-top: 15px; line-height: 1.4;">Нажимая кнопку, вы даете согласие на обработку персональных данных.</div>
+</form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+        <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/" class="logo">
+          <img src="./assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+            <p class="footer-mission">Официальное и полностью легальное оформление гражданства Евросоюза. Работаем строго по договору.</p>
+            <p class="reg-number" style="opacity: 0.7; margin-top: 10px;">A.S. CONSULTING COMPANY S.R.L.<br>CUI (Код Регистрации): 17839407</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/reviews">Отзывы клиентов</a></li>
+              <li><a href="/faq">Вопросы (FAQ)</a></li>
+              <li><a href="/contact">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Наши Услуги</h4>
+            <ul>
+              <li><a href="#">Гражданство ЕС</a></li>
+              <li><a href="#">Гражданство США</a></li>
+              <li><a href="#">Гражданство Израиля</a></li>
+              <li><a href="#">Гражданство Азии</a></li>
+              <li><a href="#">ВНЖ / ПМЖ</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list premium-icons">
+              <li title="Главный операционный офис"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Румыния: Victoria Business Center, Бухарест</li>
+              <li title="Представительство"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Болгария: Crystal Business Center, София</li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> <a href="mailto:info@eurostatus.com">info@eurostatus.com</a></li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> Пн-Пт: 10:00 - 19:00</li>
+              <li class="footer-socials" style="display: flex; gap: 15px; margin-top: 25px;">
+<a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://t.me/Eurostatus_EU" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. Все права защищены.</p>
+          <div class="legal-links">
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/terms">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="./assets/js/main.js"></script>
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+<script src="./assets/js/lang.js"></script>
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

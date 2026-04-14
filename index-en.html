@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroStatus | EU Citizenship Processing</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css?v=1775801822">
+      <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+  <body>
+    <!-- Unified Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <a href="/index-en" class="logo"><img src="./assets/images/favicon.png" alt="EuroStatus Icon" class="logo-icon">EURO<span>STATUS</span></a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/index-en">Home</a></li>
+          <li><a href="/about-en">About Us</a></li>
+            <li class="has-dropdown">
+              <a href="/services-en">Services <span class="arrow">▼</span></a>
+              <ul class="dropdown-menu">
+<li><a href="/citizenship-eu-en">EU Citizenship</a></li>
+<li><a href="/residency-en">Residency (TRP & PRP)</a></li>
+<li><a href="/investment-en">Citizenship by Investment</a></li>
+<li><a href="/visas-en">US Visas</a></li>
+</ul>
+      <div>
+        <h4>EU Citizenship</h4>
+        <p>Passport of Romania, Bulgaria or Poland in 12 months</p>
+      </div>
+    </a>
+    
+    <a href="#residency" class="mega-card" onclick="openServiceModal('EU Residency')">
+      <div class="mega-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M5 6l7-3 7 3v4H5V6z"></path></svg>
+      </div>
+      <div>
+        <h4>Residency</h4>
+        <p>For business and financially independent persons (Digital Nomad)</p>
+      </div>
+    </a>
+    
+    <a href="#investments" class="mega-card" onclick="openServiceModal('Citizenship by Investment')">
+      <div class="mega-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+      </div>
+      <div>
+        <h4>Investments</h4>
+        <p>Caribbean, Vanuatu and Asia with no residency requirements</p>
+      </div>
+    </a>
+    
+    <a href="#visas" class="mega-card" onclick="openServiceModal('Visa Support')">
+      <div class="mega-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      </div>
+      <div>
+        <h4>Visas</h4>
+        <p>US Green Card, O-1 talent visas, L-1 and EB-5</p>
+      </div>
+    </a>
+  </div>
+  
+  <div class="mega-promo">
+    <h3>Personal Analysis</h3>
+    <p>Get a free analysis of your genealogy from our lawyers in 15 minutes.</p>
+    <button class="btn-primary" onclick="openServiceModal('Free Consultation')">Evaluate Chances</button>
+  </div>
+</div>
+            </li>
+            <li><a href="/reviews-en">Reviews</a></li>
+            <li><a href="/faq-en">FAQ</a></li>
+            <li><a href="/contact-en">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch">
+             <a href="/">RU</a><span class="divider">|</span><a href="/en" class="active">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Individual Consultation'); return false;" class="btn-primary">Consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <img src="./assets/images/hero_bg.png" alt="Luxurious CEO Desk - EU Citizenship" class="hero-bg" />
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>EU Passport in 12 Months</h1>
+            <p>Legal processing of European Union citizenship without hidden fees. Obtain residency or citizenship in any EU country via repatriation or investment.</p>
+            <ul class="hero-bullets">
+              <li>
+                <div class="hero-check">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <span>Visa-free access to 170+ countries</span>
+              </li>
+              <li>
+                <div class="hero-check">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <span>0% tax on worldwide income</span>
+              </li>
+              <li>
+                <div class="hero-check">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <span>Financial guarantees in contract</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Quick Lead Form (Premium Glasspane) -->
+          <div class="hero-form-box glass-pane">
+            <div class="hero-form-header">
+              <h3>Evaluate your chances</h3>
+              <p>Leave a request for a free legal audit right now</p>
+            </div>
+            <form class="lead-form glass-form">
+              <div class="input-group floating-label">
+                <input type="text" id="hero-name" placeholder=" " required />
+                <label for="hero-name">Full Name</label>
+              </div>
+              <div class="input-group floating-label">
+                <input type="tel" id="hero-phone" placeholder=" " required />
+                <label for="hero-phone">Phone Number (with code)</label>
+              </div>
+              <button type="submit" class="btn-primary glow-btn" style="width: 100%; margin-top: 15px;">Request Audit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subtle Media Bar -->
+      <section class="media-watermarks">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0;">
+          <p style="font-size: 0.75rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 25px;">Cited and Trusted By</p>
+          <div style="display: flex; gap: 6vw; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%;">
+            <span style="color: rgba(255,255,255,0.3); font-size: 1.5rem; font-family: 'Times New Roman', serif; font-weight: 500; letter-spacing: 2px; transition: 0.3s;">FORBES</span>
+            <span style="color: rgba(255,255,255,0.3); font-size: 1.5rem; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: 1px; transition: 0.3s;">Bloomberg</span>
+            <span style="color: rgba(255,255,255,0.3); font-size: 1.5rem; font-family: 'Arial Black', sans-serif; font-weight: 900; letter-spacing: 0px; text-transform: lowercase; transition: 0.3s;">euronews.</span>
+            <span style="color: rgba(255,255,255,0.3); font-size: 1.6rem; font-family: 'Times New Roman', serif; font-weight: bold; letter-spacing: 0px; transition: 0.3s;">Adevărul</span>
+            <span style="color: rgba(255,255,255,0.3); font-size: 1.4rem; font-family: 'Georgia', serif; font-weight: 400; letter-spacing: 1px; transition: 0.3s;">FINANCIAL TIMES</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services / Programs Grid -->
+      <section id="programs" class="services-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Citizenship Programs</h2>
+            <p>We offer reliable pathways to legalization in the European Union through repatriation, naturalization, and investments.</p>
+          </div>
+          
+          <div class="services-grid">
+            <!-- Program 1 (EU) -->
+            <div class="service-card">
+              <img src="./assets/images/romania_card.png" alt="EU Citizenship" class="service-img" />
+              <div class="service-content">
+                <h3>EU Citizenship</h3>
+                <p>Obtaining an EU passport (Romania, Bulgaria, Poland) via repatriation programs.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+
+            <!-- Program 2 (USA) -->
+            <div class="service-card">
+              <img src="./assets/images/usa_card.png" alt="USA Citizenship" class="service-img" />
+              <div class="service-content">
+                <h3>USA Citizenship</h3>
+                <p>Investment visas, talent programs, and family reunification strategies for a Green Card.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+
+            <!-- Program 3 (Israel) -->
+            <div class="service-card">
+              <img src="./assets/images/israel_card.png" alt="Israel Citizenship" class="service-img" />
+              <div class="service-content">
+                <h3>Israel Citizenship</h3>
+                <p>Passport (Darkon) under the Law of Return with full legal assistance.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+
+            <!-- Program 4 (Asia) -->
+            <div class="service-card">
+              <img src="./assets/images/asia_card.png" alt="Asian Citizenship" class="service-img" />
+              <div class="service-content">
+                <h3>Asian Citizenship</h3>
+                <p>Golden visas and citizenship by investment: UAE, Singapore, Hong Kong and others.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+
+            <!-- Program 5 (VNJ Europe) -->
+            <div class="service-card">
+              <img src="./assets/images/europe_residency_card.png" alt="EU Residency" class="service-img" />
+              <div class="service-content">
+                <h3>European Residency</h3>
+                <p>Residency for digital nomads and financially independent persons in France, Spain, Cyprus.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+
+             <!-- Program 6 (Caribbean) -->
+            <div class="service-card">
+              <img src="./assets/images/caribbean_card.png" alt="Caribbean Citizenship" class="service-img" />
+              <div class="service-content">
+                <h3>Passport by Investment</h3>
+                <p>Citizenship programs in the Caribbean Basin and Vanuatu with no physical presence requirement.</p>
+                <a href="services/generic-en.html" class="btn-secondary" style="width: 100%; text-align: center;">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us & Philosophy -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <h2>Your Pathway to any EU Country</h2>
+              <p>We are an international consulting firm specializing in migration law. Our primary expertise is <strong>EU repatriation programs</strong>, which allow for the fastest passport acquisition.</p>
+              <p>Beyond repatriation, our attorneys provide bespoke solutions for "Golden Visas" (citizenship and residency via investment) or through naturalization <strong>in any EU state</strong>. We handle turnkey processes: from searching archival documents to booking your oath ceremony.</p>
+              <ul class="about-list">
+                <li>Archival genealogy searches for repatriation</li>
+                <li>Customized selection of investment programs</li>
+                <li>Complete legal support in any EU country</li>
+              </ul>
+            </div>
+            <div class="about-image">
+              <img src="./assets/images/office_team.png" alt="European Law Office" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Guarantees Section -->
+      <section class="guarantees-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Legal Guarantees</h2>
+            <p>Your security and confidentiality are secured via contract</p>
+          </div>
+          <div class="guarantees-grid">
+            <div class="guarantee-card glass-card">
+              <div class="g-icon">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                </svg>
+              </div>
+              <h3>Strictly by Contract</h3>
+              <p>We detail every stage of work, amounts, and deadlines in a formal bilateral contract.</p>
+            </div>
+            <div class="guarantee-card glass-card">
+              <div class="g-icon">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+              </div>
+              <h3>100% Confidentiality</h3>
+              <p>Your data is protected under the European GDPR standard. Zero leaks to third parties.</p>
+            </div>
+            <div class="guarantee-card glass-card">
+              <div class="g-icon">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                </svg>
+              </div>
+              <h3>No Hidden Fees</h3>
+              <p>You know the final cost upfront. Phased payments are directly tied to completed milestones.</p>
+            </div>
+            <div class="guarantee-card glass-card">
+              <div class="g-icon">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <h3>Legal Protection</h3>
+              <p>In case of unforeseen legal complications, we undertake all appeals and defense processes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stacking Dossier Process Section -->
+      <section class="dossier-section" id="process">
+        <div class="container dossier-container">
+          <!-- Sticky Left Intro -->
+          <div class="dossier-intro">
+            <h2>Compiling Your Personal Case</h2>
+            <p>The process of acquiring citizenship is not just simple steps, it is the formation of a rock-solid legal dossier. Every stage lays the foundation for your future freedom.</p>
+            <div class="dossier-decor"></div>
+          </div>
+          
+          <!-- Sticky Stack Right side -->
+          <div class="dossier-stack">
+            
+            <!-- Folder 1 -->
+            <div class="dossier-card card-1 glass-card">
+              <div class="card-header">
+                <span class="card-num">01</span>
+                <h3>Root Search & Audit</h3>
+              </div>
+              <div class="card-body">
+                <p>We analyze your lineage and look for documentary evidence for legal repatriation. If roots are missing, we pivot to find the optimal residency or investment program for your goals.</p>
+                <ul class="card-list">
+                  <li>Genealogical search</li>
+                  <li>Success probability evaluation</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Folder 2 -->
+            <div class="dossier-card card-2 glass-card">
+              <div class="card-header">
+                <span class="card-num">02</span>
+                <h3>Requisition & Dossier</h3>
+              </div>
+              <div class="card-body">
+                <p>Our lawyers submit inquiries to registry offices and Red Cross archives globally. We restore lost ancestor records, translate, and apostille the documents.</p>
+                <ul class="card-list">
+                  <li>Collection of archival extracts</li>
+                  <li>Full legalization of paperwork</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Folder 3 -->
+            <div class="dossier-card card-3 glass-card">
+              <div class="card-header">
+                <span class="card-num">03</span>
+                <h3>Submission to Authorities</h3>
+              </div>
+              <div class="card-body">
+                <p>We accompany you to submit the completed dossier via VIP appointments without queues. Your European roots are officially recognized by the Ministry of Justice.</p>
+                <ul class="card-list">
+                  <li>Personal presence of a lawyer</li>
+                  <li>Official case tracking number</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Folder 4 -->
+            <div class="dossier-card card-4 glass-card">
+              <div class="card-header">
+                <span class="card-num">04</span>
+                <h3>Oath & Obtaining Status</h3>
+              </div>
+              <div class="card-body">
+                <p>Successful conclusion. Assistance in prep for the oath, receiving the citizenship certificate, and finalizing internal EU passports.</p>
+                <ul class="card-list">
+                  <li>Citizenship Certificate</li>
+                  <li>ID card and International Passport</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section class="reviews-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Client Reviews</h2>
+            <p>Thousands of families have already secured passports with our help</p>
+          </div>
+          
+          <div class="reviews-slider">
+            <button class="slider-btn prev-btn" aria-label="Previous review">❮</button>
+            <div class="reviews-track-container">
+              <div class="reviews-track">
+                <!-- Card 1 -->
+                <div class="review-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="review-text">"Processed Spanish Residency for the whole family. The process was transparent, the lawyers were always in touch. Huge thanks to the EuroStatus team!"</p>
+                  <div class="review-author">
+                    <div class="author-avatar">A</div>
+                    <div class="author-info">
+                      <h4>Anna S.</h4>
+                      <span>Spain Residency</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="review-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="review-text">"Got a Romanian passport in 14 months. Accompanied everywhere, from submission to the oath in Bucharest. Recommended as reliable partners."</p>
+                  <div class="review-author">
+                    <div class="author-avatar">M</div>
+                    <div class="author-info">
+                      <h4>Mikhail V.</h4>
+                      <span>Romanian Citizenship</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="review-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="review-text">"Applied for a US investment visa (EB-5). A very complex case, but the specialists handled it perfectly. We are already in the States."</p>
+                  <div class="review-author">
+                    <div class="author-avatar">D</div>
+                    <div class="author-info">
+                      <h4>Dmitry O.</h4>
+                      <span>EB-5 Visa USA</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="review-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="review-text">"Processed a Vanuatu passport via investment. Everything was done remotely and much faster than expected. Excellent service."</p>
+                  <div class="review-author">
+                    <div class="author-avatar">E</div>
+                    <div class="author-info">
+                      <h4>Elena G.</h4>
+                      <span>Vanuatu Passport</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="review-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="review-text">"Thanks to EuroStatus, we successfully secured Darkon. True professionals. Everything was clear without unnecessary bureaucracy."</p>
+                  <div class="review-author">
+                    <div class="author-avatar">V</div>
+                    <div class="author-info">
+                      <h4>Victor L.</h4>
+                      <span>Israel Citizenship</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn next-btn" aria-label="Next review">❯</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lead Form / CTA Section -->
+      <section id="consultation" class="cta-form-section">
+        <div class="container">
+          <div class="cta-form-wrapper">
+            <div class="cta-text">
+              <h2>Discover Your Chances for EU Citizenship</h2>
+              <p>Leave a request and our migration expert will contact you for a free audit of your situation or to assess repatriation roots.</p>
+            </div>
+            <form class="lead-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="tel" placeholder="Phone Number" required />
+              <select required>
+                <option value="" disabled selected>What basis interests you?</option>
+                <option value="repatriation">Repatriation (Restoration by roots)</option>
+                <option value="investment">Residency/Citizenship by Investment</option>
+                <option value="consult">Advice / Need to pick a country</option>
+              </select>
+              <button type="submit" class="btn-primary" style="width: 100%;">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main Footer -->
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/index-en" class="logo"><img src="./assets/images/favicon.png" alt="EuroStatus Icon" class="logo-icon">EURO<span>STATUS</span></a>
+            <p class="footer-mission">Official and fully legal EU citizenship acquisition. We work strictly by contract.</p>
+            <p class="reg-number">Registration Number: 12345678</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="/about-en">About Us</a></li>
+              <li><a href="/reviews-en">Client Reviews</a></li>
+              <li><a href="/faq-en">FAQ</a></li>
+              <li><a href="/contact-en">Contacts</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">EU Citizenship</a></li>
+              <li><a href="#">USA Citizenship</a></li>
+              <li><a href="#">Israel Citizenship</a></li>
+              <li><a href="#">Asian Citizenship</a></li>
+              <li><a href="#">Residency (VNJ/PMJ)</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Contacts</h4>
+            <ul class="contact-list">
+              <li><span class="icon">📍</span> Office: Calea Victoriei 15, București</li>
+              <li><span class="icon">✉️</span> info@eurostatus.com</li>
+              <li><span class="icon">🕒</span> Mon-Fri: 10:00 - 19:00</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="/privacy-en">Privacy Policy</a>
+            <a href="/terms-en">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/js/main.js"></script>
+  
+    <!-- Crisp Setup -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d4ad84eb-f3ba-484b-9485-a772c7601dc2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+  
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+<script src="./assets/js/lang.js"></script>
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

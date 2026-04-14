@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroStatus | Оформление гражданства ЕС</title>
+    <!-- Подключаем основной CSS файл -->
+    <link rel="stylesheet" href="./assets/css/style.css?auto=123">
+      <link rel="icon" type="image/png" href="./assets/images/favicon.png?v=2">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+  <body>
+    <!-- Unified Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О компании</a></li>
+            <li class="has-dropdown">
+          <a href="#services">Услуги <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/citizenship-eu">Гражданство ЕС</a></li>
+            <li><a href="/residency">ВНЖ и ПМЖ в Европе</a></li>
+            <li><a href="/investment">Второе гражданство за инвестиции</a></li>
+            <li><a href="/visas">Визы и иммиграция</a></li>
+          </ul>
+        </li>
+        <li><a href="/reviews">Отзывы</a></li>
+            <li><a href="/faq" class="active">FAQ</a></li>
+            <li><a href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://t.me/Eurostatus_EU" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+          <div class="lang-switch">
+             <a href="/" class="active">RU</a><span class="divider">|</span><a href="/en">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Индивидуальная консультация'); return false;" class="btn-primary">Консультация</a>
+        </div>
+      </div>
+    </header>
+
+    
+    <main>
+      <section class="faq-hero" style="background: linear-gradient(180deg, rgba(11,32,70,0.85) 0%, rgba(11,32,70,0.65) 100%), url('./assets/images/hero_bg_light.png') center/cover no-repeat; padding: 80px 0 60px;">
+      <div class="container" style="position: relative; z-index: 2; text-align: center;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px;">
+          <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+          <span style="color: var(--gold-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">Помощь</span>
+          <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+        </div>
+        <h1 style="font-size: 3.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 20px; color: #ffffff; font-family: 'Times New Roman', serif; line-height: 1.1;">
+            Вопросы и Инструкции
+        </h1>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.25rem; color: rgba(255,255,255,0.85); line-height: 1.6; font-weight: 400;">Абсолютная понятность и прозрачность на каждом этапе оформления гражданства.</p>
+      </div>
+    </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-layout">
+            <aside class="faq-sidebar">
+              <ul class="faq-tabs">
+                <li class="faq-tab active" data-target="cat-1">Программы и процесс</li>
+                <li class="faq-tab" data-target="cat-2">Юридические гарантии</li>
+                <li class="faq-tab" data-target="cat-3">Процедура и поездки</li>
+                <li class="faq-tab" data-target="cat-4">Семья, налоги и возможности</li>
+                <li class="faq-tab" data-target="cat-5">Возврат средств</li>
+              </ul>
+            </aside>
+
+            <div class="faq-content">
+              
+              <div class="faq-category active" id="cat-1">
+                <h2>Программы и процесс получения</h2>
+                <div class="faq-item">
+                  <div class="faq-question">Нужно ли мне отказываться от своего первого гражданства? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Нет. Законодательство Румынии, Болгарии и ряда других стран ЕС признает право на множественное гражданство. Получая европейский паспорт, вы сохраняете текущий. Мы юридически контролируем этот вопрос.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Обязательно ли мне знать государственный язык страны? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>В инвестиционных программах («Золотые визы») знание языка не требуется. В программах репатриации — требования зависят от страны. Например, в Румынии для сдачи присяги потребуется минимальный базовый уровень (мы предоставляем бесплатные материалы для подготовки с репетитором).</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Сколько времени в реальности занимает весь процесс? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Для программ репатриации средний срок от старта до паспорта — 14–24 месяца. Оформление ВНЖ (Испания, Франция) занимает от 2 до 4 месяцев. Сроки строго регламентированы Минюстом выбранной юрисдикции.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Нужно ли мне переезжать и постоянно жить в Европе? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Нет. Для получения паспорта по репатриации или «Золотой визе» постоянное проживание не требуется. Вы можете жить в своей стране, а паспорт ЕС использовать исключительно для безвизовых путешествий и защиты капитала.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Могут ли мне отказать в гражданстве? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Риск отказа минимален (менее 1%), если мы взяли ваш кейс в работу. Однако, в маловероятном случае отказа, мы гарантируем возврат средств согласно пунктам договора. Вы можете заранее ознакомиться с процедурой и заполнить <a href="/refund" style="color: var(--gold-main); text-decoration: underline;">заявку на возврат</a> прямо на сайте. Перед стартом работы наши юристы обязательно проводят жесткий аудит ваших документов и шансов.</p></div>
+                </div>
+              </div>
+
+              <div class="faq-category" id="cat-2">
+                <h2>Юридические гарантии</h2>
+                <div class="faq-item">
+                  <div class="faq-question">В чем ваша гарантия, что вы не исчезнете с моими деньгами? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Мы работаем строго по двустороннему контракту, который подписывается с нашей лицензированной европейской компанией (A.S. Consulting S.R.L.). Мы не работаем по 100% предоплате — все платежи разбиты на этапы по факту выполнения работы.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Безопасно ли передавать вам оригиналы документов? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Да, абсолютно. Мы работаем через защищенные курьерские службы (DHL, FedEx), а документы хранятся в сейфовых ячейках нашего юридического департамента. По вашей просьбе мы также можем работать с нотариально заверенными копиями до момента финальной подачи.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Как защищены мои данные (GDPR)? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Как компания, зарегистрированная в ЕС, мы несем уголовную и финансовую ответственность за утечку данных в соответствии с регламентом GDPR. Никакие данные не передаются третьим лицам.</p></div>
+                </div>
+              </div>
+
+              <div class="faq-category" id="cat-3">
+                <h2>Процедура и поездки</h2>
+                <div class="faq-item">
+                  <div class="faq-question">Придется ли мне летать в Европу для оформления бумаг? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Мы стараемся свести ваши поездки к минимуму. Сбор документов, их легализация, переводы и даже <b>подача досье в Минюст</b> происходят полностью без вашего участия (мы подаем сами по доверенности вместо клиента). Ваше личное присутствие потребуется <b>только 1 раз</b> — на торжественной сдаче присяги.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Вы сопровождаете меня в поездках? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Да. На обоих этапах (подача и присяга) вас встречает наш юрист на территории ЕС, сопровождает в государственные органы и курирует весь процесс, исключая любые бюрократические заминки.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Можно ли подать документы через консульство в моей стране? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Законодательство позволяет подачу через консульства, однако мы настоятельно рекомендуем подавать досье напрямую в Бухаресте или Софии. Это ускоряет процесс в среднем на 6-8 месяцев. Мы организуем вашу поездку "под ключ".</p></div>
+                </div>
+              </div>
+
+              <div class="faq-category" id="cat-4">
+                <h2>Семья, налоги и возможности</h2>
+                <div class="faq-item">
+                  <div class="faq-question">Получат ли паспорт мои дети и супруг(а)? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>По программам репатриации несовершеннолетние дети получают гражданство вместе с вами абсолютно бесплатно. Супруги могут оформить ВНЖ по воссоединению семьи сразу после получения вами гражданства, с последующим выходом на паспорт.</p></div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-question">Буду ли я платить налоги в Европе, если не живу там? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Нет. Само по себе наличие гражданства ЕС не делает вас налоговым резидентом. Вы платите налоги только там, где проживаете более 183 дней в году (в центре жизненных интересов).</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Дает ли этот паспорт право работать в Германии / Швейцарии / Франции? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Да. Паспорт любой страны ЕС (например, Румынии или Болгарии) дает вам абсолютное и безусловное право жить, официально работать и вести бизнес в любой из 27 стран Европейского союза на тех же правах, что и коренные жители.</p></div>
+                </div>
+              </div>
+              <div class="faq-category" id="cat-5">
+                <h2>Возврат средств</h2>
+                <div class="faq-item">
+                  <div class="faq-question">Как работает процедура возврата в случае отказа? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>В маловероятном случае отказа, мы несем полную финансовую ответственность. Гарантия возврата средств 100% закреплена в нашем двустороннем договоре. Вы можете ознакомиться с регламентом и подать <a href="/refund" style="color: var(--gold-main); text-decoration: underline;">официальную заявку на возврат</a> прямо на нашем сайте.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">В какие сроки осуществляется возврат? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>После получения вашей заявки и проверки документов об отказе, финансовый отдел производит возврат всех оплаченных по договору средств на указанные вами банковские реквизиты в течение 14 рабочих дней.</p></div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-question">Удерживается ли комиссия при возврате? <span class="faq-toggle">+</span></div>
+                  <div class="faq-answer"><p>Нет. Возврат производится в полном объеме суммы, изначально уплаченной за наши услуги по договору. Риски по издержкам мы полностью берем на себя, поэтому мы так тщательно берем дела в работу.</p></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    <!-- Legal Guarantee / Premium White Form Section -->
+    <section id="consultation" class="cta-form-section">
+        <div class="container">
+          <div class="cta-form-wrapper">
+            <div class="cta-text">
+              <h2>Узнайте свои шансы на гражданство ЕС</h2>
+              <p>Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+            </div>
+            <form class="lead-form" action="#" method="POST">
+    <input placeholder="Ваше имя" name="name" required="" type="text"/>
+    <input placeholder="Номер телефона" name="phone" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-1">
+        <input type="hidden" name="service_type" id="hidden_service_type_1" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-1').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-1" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-1">
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+    <button class="btn-primary" style="width: 100%; margin-top: 5px;" type="submit">Оставить заявку</button>
+    <div style="font-size: 0.75rem; text-align: center; color: rgba(255,255,255,0.4); margin-top: 15px; line-height: 1.4;">Нажимая кнопку, вы даете согласие на обработку персональных данных.</div>
+</form>
+          </div>
+        </div>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const sphoneInput = document.querySelector("#SPhoneContact");
+          if(sphoneInput) {
+              const iti = window.intlTelInput(sphoneInput, {
+                  initialCountry: "auto",
+                  geoIpLookup: function(success, failure) {
+                      fetch("https://ipapi.co/json").then(res => res.json()).then(data => success(data.country_code)).catch(() => success("ru"));
+                  },
+                  preferredCountries: ["ru", "by", "ua", "kz", "ro", "il"],
+                  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+              });
+
+              document.getElementById('SChannelPref').addEventListener('change', function() {
+                  document.getElementById('SEmailOptWrap').style.display = this.value === 'email' ? 'block' : 'none';
+              });
+
+              const sform = document.getElementById('standalone-form');
+              sform.addEventListener('submit', function(e) {
+                 e.preventDefault();
+                 let isValid = true;
+                 document.querySelectorAll('.light-input').forEach(el => el.classList.remove('input-error-light'));
+                 document.querySelectorAll('.error-msg-light').forEach(el => el.style.display = 'none');
+
+                 if(document.getElementById('SFullName').value.length < 3) {
+                     document.getElementById('SFullName').classList.add('input-error-light');
+                     document.getElementById('err-SFullName').style.display = 'block';
+                     isValid = false;
+                 }
+                 
+                 if(sphoneInput.value.trim() === '' || !iti.isValidNumber()) {
+                     sphoneInput.classList.add('input-error-light');
+                     document.getElementById('err-SPhoneContact').style.display = 'block';
+                     isValid = false;
+                 }
+                 
+                 if(isValid) {
+                     const btn = document.getElementById('SsubmitContactBtn');
+                     btn.innerHTML = '<span style="opacity:0.8">Отправка...</span>';
+                     btn.style.pointerEvents = 'none';
+                     
+                     setTimeout(() => {
+                        sform.style.display = 'none';
+                        document.getElementById('Scontact-success').style.display = 'block';
+                     }, 1200);
+                 }
+              });
+          }
+      });
+    </script>
+
+
+      <script>
+        const tabs = document.querySelectorAll('.faq-tab');
+        const categories = document.querySelectorAll('.faq-category');
+
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            categories.forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById(tab.getAttribute('data-target')).classList.add('active');
+          });
+        });
+
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(q => {
+          q.addEventListener('click', () => {
+             const item = q.parentElement;
+             const isActive = item.classList.contains('active');
+             
+             if(!isActive) {
+                 item.classList.add('active');
+             } else {
+                 item.classList.remove('active');
+             }
+          });
+        });
+      </script>
+    </main>
+
+
+    <!-- Main Footer -->
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/" class="logo">
+          <img src="./assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+            <p class="footer-mission">Официальное и полностью легальное оформление гражданства Евросоюза. Работаем строго по договору.</p>
+            <p class="reg-number" style="opacity: 0.7; margin-top: 10px;">A.S. CONSULTING COMPANY S.R.L.<br>CUI (Код Регистрации): 17839407</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/reviews">Отзывы клиентов</a></li>
+              <li><a href="/faq">Вопросы (FAQ)</a></li>
+              <li><a href="/contact">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Наши Услуги</h4>
+            <ul>
+              <li><a href="#">Гражданство ЕС</a></li>
+              <li><a href="#">Гражданство США</a></li>
+              <li><a href="#">Гражданство Израиля</a></li>
+              <li><a href="#">Гражданство Азии</a></li>
+              <li><a href="#">ВНЖ / ПМЖ</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list premium-icons">
+              <li title="Главный операционный офис"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Румыния: Victoria Business Center, Бухарест</li>
+              <li title="Представительство"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Болгария: Crystal Business Center, София</li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> <a href="mailto:info@eurostatus.com">info@eurostatus.com</a></li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> Пн-Пт: 10:00 - 19:00</li>
+              <li class="footer-socials" style="display: flex; gap: 15px; margin-top: 25px;">
+<a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://t.me/Eurostatus_EU" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. Все права защищены.</p>
+          <div class="legal-links">
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/terms">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script type="module" src="./assets/js/main.js"></script>
+
+  
+    
+    <!-- Crisp Setup -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d4ad84eb-f3ba-484b-9485-a772c7601dc2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+<script src="./assets/js/lang.js"></script>
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

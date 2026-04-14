@@ -1,0 +1,245 @@
+<section class="hero">
+<img alt="Luxurious CEO Desk - EU Citizenship" class="hero-bg" src="/hero_bg_light.png"/>
+<div class="hero-overlay"></div>
+<div class="container hero-container">
+<div class="hero-content">
+<h1>Паспорт Евросоюза за 12 месяцев</h1>
+<p>Законное оформление гражданства стран Европейского Союза без скрытых платежей. Получите статус в любой стране ЕС на основе репатриации или инвестиций.</p>
+<ul class="hero-bullets">
+<li>
+<div class="hero-check">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span>Безвизовый въезд в 170+ стран</span>
+</li>
+<li>
+<div class="hero-check">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span>0% налогов на мировой доход</span>
+</li>
+<li>
+<div class="hero-check">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span>Финансовые гарантии по договору</span>
+</li>
+</ul>
+</div>
+<!-- Quick Lead Form (Premium Glasspane) -->
+<div class="hero-form-wrapper" style="position: relative; z-index: 10;">
+<img alt="Romanian Passport" class="deco-passport p-romania" src="/p_romania.png">
+<img alt="Bulgarian Passport" class="deco-passport p-bulgaria" src="/p_bulgaria.png"/>
+<div class="hero-form-box glass-pane">
+<div class="hero-form-header">
+<h3>Оцените свои шансы</h3>
+<p>Оставьте заявку на бесплатный юридический аудит прямо сейчас</p>
+</div>
+<form class="lead-form glass-form">
+<div class="input-group floating-label">
+<input id="hero-name" placeholder=" " required="" type="text"/>
+<label for="hero-name">Ваше имя и фамилия</label>
+</div>
+<div class="input-group floating-label">
+<input id="hero-phone" placeholder=" " required="" type="tel"/>
+<label for="hero-phone">Номер телефона (с кодом)</label>
+</div>
+<button class="btn-primary glow-btn" style="width: 100%; margin-top: 15px;" type="submit">Запросить аудит</button>
+</form>
+</div>
+</img></div>
+</div>
+</section>
+<!-- Subtle Media Bar -->
+<section class="media-watermarks">
+<div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0;">
+<p style="font-size: 0.75rem; color: rgba(26, 32, 44, 0.5); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 25px;">Нас цитируют и нам доверяют</p>
+<div style="display: flex; gap: 6vw; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%;">
+<span style="color: rgba(26, 32, 44, 0.4); font-size: 1.5rem; font-family: 'Times New Roman', serif; font-weight: 500; letter-spacing: 2px; transition: 0.3s;">FORBES</span>
+<span style="color: rgba(26, 32, 44, 0.4); font-size: 1.5rem; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: 1px; transition: 0.3s;">Bloomberg</span>
+<span style="color: rgba(26, 32, 44, 0.4); font-size: 1.5rem; font-family: 'Arial Black', sans-serif; font-weight: 900; letter-spacing: 0px; text-transform: lowercase; transition: 0.3s;">euronews.</span>
+<span style="color: rgba(26, 32, 44, 0.4); font-size: 1.6rem; font-family: 'Times New Roman', serif; font-weight: bold; letter-spacing: 0px; transition: 0.3s;">Adevărul</span>
+<span style="color: rgba(26, 32, 44, 0.4); font-size: 1.4rem; font-family: 'Georgia', serif; font-weight: 400; letter-spacing: 1px; transition: 0.3s;">FINANCIAL TIMES</span>
+</div>
+</div>
+</section>
+<!-- Services / Programs Grid -->
+<!-- Citizenship Programs Grid -->
+<section class="programs-grid-section" id="programs" style="padding: 80px 0; background: var(--bg-light);">
+<div class="container">
+<div class="section-header" style="text-align: center; margin-bottom: 50px;">
+<h2 style="font-family: 'Times New Roman', serif; font-size: 2.8rem; color: #0B2046; position: relative;">Программы получения гражданства</h2>
+<p style="font-size: 1.1rem; color: #666; max-width: 700px; margin: 15px auto 0;">Мы предлагаем надежные пути легализации в странах Европейского Союза и мире на основании репатриации, натурализации и инвестиций.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+<!-- CARD 1 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/romania_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">Гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Получение паспорта ЕС (Румыния, Болгария, Польша) через надежные программы репатриации с юридическим сопровождением.</p>
+<button class="btn-primary" onclick="openServiceModal('Гражданство ЕС')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+<!-- CARD 2 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/usa_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">Гражданство США</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Инвестиционные визы, программы для талантов экстраординарных способностей и воссоединение семьи для получения Green Card.</p>
+<button class="btn-primary" onclick="openServiceModal('Гражданство США')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+<!-- CARD 3 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/israel_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">Гражданство Израиля</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Паспорт (Даркон) по закону о возвращении с полным юридическим сопровождением и поиском корней.</p>
+<button class="btn-primary" onclick="openServiceModal('Гражданство Израиля')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+<!-- CARD 4 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/asia_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">Гражданство Азии</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Золотые визы и гражданство за инвестиции для бизнеса: ОАЭ (Дубай), Сингапур, Гонконг и другие премиум-направления.</p>
+<button class="btn-primary" onclick="openServiceModal('Гражданство Азии')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+<!-- CARD 5 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/europe_residency_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">ВНЖ в Европе</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Комфортный ВНЖ для цифровых кочевников (Digital Nomad) и финансово независимых лиц: Франция, Испания, Кипр.</p>
+<button class="btn-primary" onclick="openServiceModal('ВНЖ в Европе')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+<!-- CARD 6 -->
+<div class="service-card" style="border-radius: 12px; overflow: hidden; background: #0B2046; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column;">
+<div style="height: 220px; background: url('./public/caribbean_card.png') center/cover;"></div>
+<div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+<h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff;">Паспорт за инвестиции</h3>
+<p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">Программы гражданства карибского бассейна и Вануату без требования к физическому проживанию.</p>
+<button class="btn-primary" onclick="openServiceModal('Паспорт за инвестиции')" style="margin-top: 25px; width: 100%; border-radius: 8px;">Подробнее</button>
+</div>
+</div>
+</div>
+<div style="text-align: center; margin-top: 60px;">
+<button class="btn-secondary" onclick="openServiceModal('Индивидуальный подбор программы')" onmouseout="this.style.background='transparent'; this.style.color='var(--gold-main)';" onmouseover="this.style.background='var(--gold-main)'; this.style.color='#fff';" style="padding: 15px 40px; font-size: 1.1rem; border-radius: 30px; border: 2px solid var(--gold-main); color: var(--gold-main); background: transparent; cursor: pointer; transition: 0.3s; font-weight: 500;">Больше программ</button>
+</div>
+</div>
+</section>
+<!-- Legal Guarantees Section -->
+<section class="guarantees-section">
+<div class="container">
+<div class="section-header text-center">
+<h2>Юридические гарантии</h2>
+<p>Ваша безопасность и конфиденциальность закреплены договором</p>
+</div>
+<div class="guarantees-grid">
+<div class="guarantee-card glass-card">
+<div class="g-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 24 24">
+<path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3>Строго по договору</h3>
+<p>Мы прописываем каждый этап работы, суммы и сроки в официальном двустороннем договоре.</p>
+</div>
+<div class="guarantee-card glass-card">
+<div class="g-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 24 24">
+<path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3>100% Конфиденциальность</h3>
+<p>Ваши данные защищены по европейскому стандарту GDPR. Никаких утечек информации третьим лицам.</p>
+</div>
+<div class="guarantee-card glass-card">
+<div class="g-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 24 24">
+<path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3>Без скрытых комиссий</h3>
+<p>Вы заранее знаете конечную стоимость. Поэтапная оплата привязывается к факту выполненных работ.</p>
+</div>
+<div class="guarantee-card glass-card">
+<div class="g-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1" viewbox="0 0 24 24">
+<path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3>Правовая защита</h3>
+<p>В случае непредвиденных юридических сложностей мы берем на себя процессы апелляции и защиты.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stacking Dossier Process Section -->
+<section class="dossier-section cinematic-theme" id="process">
+<div class="container cinematic-container">
+<!-- Left Column: Sticky Timeline -->
+<div class="cinematic-timeline-col">
+<div class="dossier-intro">
+<h2>Сборка вашего персонального дела</h2>
+<p>Процесс получения гражданства — это не просто шаги, это формирование железобетонного юридического досье. Каждый этап ложится в основу вашей будущей свободы.</p>
+</div>
+<div class="timeline-wrapper">
+<!-- Step 1 -->
+<div class="timeline-step">
+<div class="step-line"></div>
+<div class="step-num">01</div>
+<div class="step-content">
+<h3>Поиск и аудит корней</h3>
+<p>Мы анализируем вашу родословную и ищем документальные зацепки для легальной репатриации. Если корней нет — мы подбираем оптимальную программу ВНЖ или инвестиций под ваши цели.</p>
+<ul class="card-list">
+<li>Генеалогический поиск</li>
+<li>Оценка шансов на успех</li>
+</ul>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="timeline-step">
+<div class="step-line"></div>
+<div class="step-num">02</div>
+<div class="step-content">
+<h3>Истребование и досье</h3>
+<p>Наши адвокаты отправляют запросы в архивы ЗАГС и Красного Креста по всему миру. Мы восстанавливаем утерянные метрики ваших предков, переводим и апостилируем документы.</p>
+<ul class="card-list">
+<li>Сбор архивных выписок</li>
+<li>Полная легализация бумаг</li>
+</ul>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="timeline-step">
+<div class="step-num gold">03</div>
+<div class="step-content">
+<h3>Подача в инстанции</h3>
+<p>Сопровождаем вас на подачу готового досье без очередей по VIP-записи. Ваши европейские корни официально признаются министерством юстиции.</p>
+<ul class="card-list">
+<li>Личное присутствие адвоката</li>
+<li>Официальный номер дела</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Cinematic Image -->
+<div class="cinematic-visual-col">
+<div class="sticky-image-container">
+<img alt="Premium Legal Dossier" class="cinematic-img" src="/premium_dossier_desk.png"/>
+</div>
+</div>
+</div>
+</section>
