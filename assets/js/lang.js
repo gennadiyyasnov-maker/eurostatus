@@ -1,13 +1,41 @@
 /* Simple Google Translate Auto-Localization */
 
-function setTranslateCookie(lang) {
-    document.cookie = `googtrans=/ru/${lang}; path=/`;
-    document.cookie = `googtrans=/ru/${lang}; domain=${location.hostname}; path=/`;
+/* --- Cookie Handling --- */
+// Function to get cookie value by name
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
 }
 
-function removeTranslateCookie() {
-    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${location.hostname}; path=/;`;
+function setTranslateCookie(lang) {
+    document.cookie = `googtrans=/ru/${lang}; path=/;`;
+    if (lang === 'en') {
+        document.cookie = `googtrans=/ru/${lang}; path=/; domain=.${location.hostname}`;
+    }
+}
+
+function obliterateTranslateCookies() {
+    // Aggressively delete ALL cookies matching googtrans
+    const domains = [
+        location.hostname,
+        `.${location.hostname}`,
+        location.hostname.split('.').slice(1).join('.'), // usually the main domain
+        `.${location.hostname.split('.').slice(1).join('.')}`
+    ];
+    
+    // Explicitly target root path and common variations
+    domains.forEach(d => {
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${d}`;
+        document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    });
+    
+    // Also clear from local storage
+    try {
+        localStorage.removeItem('googtrans');
+        sessionStorage.removeItem('googtrans');
+    } catch(e){}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -78,7 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTranslateCookie('en');
                 window.location.reload();
             } else if (text === 'ru' && currentLang !== 'ru') {
-                setTranslateCookie('ru');
+                obliterateTranslateCookies();
+                // Set the url hash purely as a safety mechanism
+                window.location.hash = '#googtrans(ru|ru)';
                 window.location.reload();
             }
         }
