@@ -225,15 +225,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(form);
             
+            const name = formData.get('name') || '';
+            const phone = formData.get('phone') || '';
+            const service = formData.get('service_type') || 'Не указана';
+            const comment = formData.get('comment') || '';
+
+            let text = `🚨 Новая заявка с сайта EuroStatus!\n\n`;
+            if (name) text += `👤 Имя: ${name}\n`;
+            text += `📞 Телефон: ${phone}\n`;
+            if (service) text += `💼 Услуга: ${service}\n`;
+            if (comment) text += `💬 Комментарий: ${comment}\n`;
+            
             try {
-                const response = await fetch('/telegram.php', {
+                const response = await fetch('https://api.telegram.org/bot8627909617:AAEt8vm6dDifjUgJQuPH6wbeDPgZjXEJM-Y/sendMessage', {
                     method: 'POST',
-                    body: formData
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: '8724690379',
+                        text: text
+                    })
                 });
                 
                 const result = await response.json();
                 
-                if (result.status === 'success') {
+                if (result.ok) {
                     if (submitBtn) {
                         submitBtn.innerText = 'Заявка отправлена!';
                         submitBtn.style.backgroundColor = '#2ecc71';
@@ -254,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }, 5000);
                 } else {
-                    alert('Ошибка: ' + (result.message || 'Не удалось отправить заявку.'));
+                    alert('Ошибка: Не удалось отправить заявку.');
                     if (submitBtn) {
                         submitBtn.disabled = false;
                         submitBtn.innerText = originalBtnText;
