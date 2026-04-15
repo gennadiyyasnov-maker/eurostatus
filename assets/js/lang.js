@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (text === 'en' && currentLang !== 'en') {
                 setTranslateCookie('en');
+                window.location.hash = '#googtrans(ru|en)';
                 window.location.reload();
             } else if (text === 'ru' && currentLang !== 'ru') {
                 obliterateTranslateCookies();
-                // Set the url hash purely as a safety mechanism
                 window.location.hash = '#googtrans(ru|ru)';
                 window.location.reload();
             }
