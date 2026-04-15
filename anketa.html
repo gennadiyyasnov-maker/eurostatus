@@ -40,10 +40,11 @@
             margin-bottom: 0;
         }
         .form-section h3 {
-            color: var(--gold-main);
+            color: #0B2046;
             font-family: 'Times New Roman', serif;
             font-size: 1.5rem;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         .input-group {
             margin-bottom: 15px;
@@ -57,20 +58,21 @@
         }
         .input-group input, .input-group select, .input-group textarea {
             width: 100%;
-            padding: 12px 15px;
-            border-radius: 6px;
-            border: 1px solid #d1d5db;
+            padding: 14px 15px;
+            border-radius: 8px;
+            border: 2px solid #0B2046;
             background: #f8fafc;
             font-size: 1rem;
-            color: #1e293b;
+            color: #0B2046;
+            font-weight: 500;
             box-sizing: border-box;
             transition: all 0.3s ease;
         }
         .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
-            border-color: var(--gold-main);
+            border-color: #0B2046;
             outline: none;
             background: #ffffff;
-            box-shadow: 0 0 0 3px rgba(212,175,55,0.2);
+            box-shadow: 0 0 0 4px rgba(11, 32, 70, 0.15);
         }
         .checkbox-group {
             display: flex;
@@ -80,9 +82,9 @@
         }
         .checkbox-group input[type="checkbox"] {
             margin-top: 3px;
-            width: 18px;
-            height: 18px;
-            accent-color: var(--gold-main);
+            width: 20px;
+            height: 20px;
+            accent-color: #0B2046;
         }
         .checkbox-group label {
             color: var(--text-secondary);
@@ -144,7 +146,7 @@
     <main style="padding-top: 100px; min-height: 70vh; background: var(--bg-light); color: var(--text-main);">
         <div class="container">
             <div class="anketa-container">
-                <h1 class="section-title" style="margin-top: 0; color: var(--gold-main); text-align: center; margin-bottom: 10px;">Анкета Заявителя</h1>
+                <h1 class="section-title" style="margin-top: 0; color: #0B2046; text-align: center; margin-bottom: 10px; font-weight: bold;">Анкета Заявителя</h1>
                 <p style="text-align: center; color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">Программа ускоренного получения гражданства Республики Словения по ст. 12.</p>
 
                 <div id="form-alert" class="alert-box" style="display: none;"></div>
@@ -288,12 +290,12 @@
                         <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Вы можете безопасно прикрепить фото или сканы паспорта, прописки, свидетельств и других документов, которые есть у вас на руках.</p>
                         <div class="input-group">
                             <label>Документы (можно выбрать несколько файлов)</label>
-                            <input type="file" name="documents" multiple accept=".jpg,.jpeg,.png,.pdf" style="padding: 15px; background: white; border: 1px dashed #d1d5db; cursor: pointer;">
+                            <input type="file" name="documents" multiple accept=".jpg,.jpeg,.png,.pdf" style="padding: 15px; background: #f8fafc; border: 2px dashed #0B2046; cursor: pointer; color: #0B2046; font-weight: 500;">
                             <small style="color: #666; font-size: 0.85rem; display: block; margin-top: 8px;">Доступные форматы: JPG, PNG, PDF. Нажмите `Ctrl` (или `Cmd` на Mac), чтобы выбрать сразу несколько файлов.</small>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 18px;">Отправить Анкету Специалисту</button>
+                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.2rem; font-weight: bold; padding: 20px; background: #0B2046; color: white; border-radius: 8px; border: none; cursor: pointer; transition: 0.3s;">Отправить Анкету Специалисту</button>
                     <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 15px;">
                         Отправляя форму, вы даете согласие на конфиденциальную обработку ваших персональных данных.
                         Наши специалисты свяжутся с вами сразу после анализа.
