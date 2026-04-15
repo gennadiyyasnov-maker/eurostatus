@@ -1,19 +1,20 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+import fs from 'fs';
+
+// Автоматически собираем все .html файлы в корне как точки входа
+const htmlFiles = fs.readdirSync(__dirname).filter(file => file.endsWith('.html') && !file.startsWith('temp_') && !file.startsWith('recovered_') && file !== 'template.html');
+const input = {};
+htmlFiles.forEach(file => {
+  const name = file.replace('.html', '');
+  input[name] = resolve(__dirname, file);
+});
+
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'about.html'),
-        about_progress1: resolve(__dirname, 'about_progress1.html'),
-        about_progress2: resolve(__dirname, 'about_progress2.html'),
-        contact: resolve(__dirname, 'contact.html'),
-        faq: resolve(__dirname, 'faq.html'),
-        reviews: resolve(__dirname, 'reviews.html'),
-        anketa: resolve(__dirname, 'anketa.html')
-      }
+      input: input
     }
   },
   plugins: [
