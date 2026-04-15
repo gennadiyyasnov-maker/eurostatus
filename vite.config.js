@@ -11,7 +11,8 @@ export default defineConfig({
         about_progress2: resolve(__dirname, 'about_progress2.html'),
         contact: resolve(__dirname, 'contact.html'),
         faq: resolve(__dirname, 'faq.html'),
-        reviews: resolve(__dirname, 'reviews.html')
+        reviews: resolve(__dirname, 'reviews.html'),
+        anketa: resolve(__dirname, 'anketa.html')
       }
     }
   },
