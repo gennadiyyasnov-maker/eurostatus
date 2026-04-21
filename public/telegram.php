@@ -12,7 +12,7 @@ header("Access-Control-Allow-Methods: POST");
 // 1. УКАЖИТЕ ВАШИ ДАННЫЕ TELEGRAM НИЖЕ
 // ==========================================
 $TELEGRAM_TOKEN = "8627909617:AAEt8vm6dDifjUgJQuPH6wbeDPgZjXEJM-Y";
-$CHAT_ID = "-8724690379";
+$CHAT_ID = "8697200232";
 
 // ==========================================
 

