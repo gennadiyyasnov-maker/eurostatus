@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+<style>
+img { width: 300px; height: 300px; object-fit: cover; }
+.caption { font-size: 24px; font-weight: bold; }
+</style>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+<body>
+<div class="caption">review_1.jpg</div> <img src="public/Otzivy/review_1.jpg"><hr>
+<div class="caption">review_2.jpg</div> <img src="public/Otzivy/review_2.jpg"><hr>
+<div class="caption">review_3.jpg</div> <img src="public/Otzivy/review_3.jpg"><hr>
+<div class="caption">review_4.jpg</div> <img src="public/Otzivy/review_4.jpg"><hr>
+<div class="caption">review_5.jpg</div> <img src="public/Otzivy/review_5.jpg"><hr>
+<div class="caption">review_6.jpg</div> <img src="public/Otzivy/review_6.jpg"><hr>
+<div class="caption">review_7.jpg</div> <img src="public/Otzivy/review_7.jpg"><hr>
+
+<!-- Standardized Form JS -->
+<script>
+function customSelectOptionUnif(inputId, textId, menuId, wrapperId, value, text) {
+    var inp = document.getElementById(inputId);
+    if(inp) inp.value = value;
+    var txt = document.getElementById(textId);
+    if(txt) {
+        txt.innerText = text;
+        txt.style.color = '#ffffff';
+    }
+    var menu = document.getElementById(menuId);
+    if(menu) menu.classList.remove('show');
+    var trigger = document.querySelector('#' + wrapperId + ' .custom-select-trigger');
+    if(trigger) trigger.classList.remove('active');
+}
+document.addEventListener('click', function(e) {
+    var dropdowns = ['unif-dropdown-1', 'unif-dropdown-2'];
+    dropdowns.forEach(function(pid) {
+        var wrapper = document.getElementById(pid);
+        if (wrapper && !wrapper.contains(e.target)) {
+            var m = document.getElementById(pid.replace('dropdown', 'dropdown-menu'));
+            if(m) m.classList.remove('show');
+            var tr = document.querySelector('#' + pid + ' .custom-select-trigger');
+            if(tr) tr.classList.remove('active');
+        }
+    });
+});
+</script>
+
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

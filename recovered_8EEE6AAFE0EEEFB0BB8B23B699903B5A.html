@@ -1,0 +1,1084 @@
+<html lang="ru"><head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы клиентов | EuroStatus - Оформление гражданства ЕС</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      .reviews-hero {
+        padding: 120px 0 60px;
+        background: var(--navy-dark);
+        text-align: center;
+      }
+      .reviews-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+      }
+      .reviews-hero p {
+        color: var(--text-secondary);
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      
+      .trust-stats {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+      }
+      .stat-item {
+        text-align: center;
+      }
+      .stat-num {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--gold-main);
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 5px;
+      }
+      .stat-desc {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* Strict Grid Layout */
+      .masonry-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 60px 0;
+        align-items: stretch;
+      }
+      @media (max-width: 1024px) {
+        .masonry-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (max-width: 768px) {
+        .masonry-grid { grid-template-columns: 1fr; }
+      }
+
+      .review-brick {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        border: 1px solid rgba(0,0,0,0.04);
+        transition: transform 0.3s ease;
+      }
+      .review-brick:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 50px rgba(0,0,0,0.06);
+      }
+      
+      .brick-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding-bottom: 20px;
+      }
+      
+      /* Image Placeholder for future uploads */
+      .brick-avatar-placeholder {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--navy-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+        flex-shrink: 0;
+        border: 1px dashed rgba(0,0,0,0.2);
+        overflow: hidden;
+      }
+      .brick-avatar-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .brick-meta {
+        flex: 1;
+      }
+      .brick-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+      .brick-program {
+        font-size: 0.85rem;
+        color: var(--gold-hover);
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .brick-date {
+        font-size: 0.8rem;
+        color: rgba(0,0,0,0.4);
+      }
+      
+      .brick-text {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+      .brick-text.clamped {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .read-more-btn {
+        background: none;
+        border: none;
+        color: var(--gold-main);
+        font-weight: 600;
+        font-size: 0.85rem;
+        padding: 0;
+        margin-top: auto;
+        align-self: flex-start;
+        cursor: pointer;
+        font-family: inherit;
+        transition: color 0.3s ease;
+      }
+      .read-more-btn:hover {
+        color: var(--gold-hover);
+        text-decoration: underline;
+      }
+      
+      .brick-stars {
+        color: var(--gold-main);
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+      
+      .brick-text-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Attachment Placeholder */
+      .brick-attachment {
+        margin-top: auto;
+        border-radius: 8px;
+        background: var(--navy-light);
+        border: 1px dashed rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: rgba(0,0,0,0.4);
+        font-size: 0.85rem;
+        text-align: center;
+      }
+      .brick-attachment img {
+         width: 100%;
+         border-radius: 6px;
+         display: none; /* User will activate when ready */
+      }
+      
+    </style>
+  <script src="https://client.crisp.chat/l.js" async=""></script><style id="antigravity-scroll-lock-style">
+  html:root body.antigravity-scroll-lock {
+    overflow: hidden !important;
+  }
+</style><link href="https://client.relay.crisp.chat" rel="dns-prefetch" crossorigin=""><link href="https://client.crisp.chat" rel="preconnect" crossorigin=""><script src="https://client.crisp.chat/static/javascripts/client_default_0611c50.js" type="module" async=""></script><link href="https://client.crisp.chat/static/stylesheets/client_default_0611c50.css" type="text/css" rel="stylesheet"><link rel="stylesheet" crossorigin="" href="https://client.crisp.chat/static/stylesheets/common_default_0611c50.css"><link rel="stylesheet" crossorigin="" href="https://client.crisp.chat/static/stylesheets/features/chat_default_0611c50.css">    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+</head>
+  <body class="">
+    <!-- Header Placeholder -->
+    <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text">
+            <span class="logo-euro">EURO</span>
+            <span class="logo-status">STATUS</span>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/about">О компании</a></li>
+            <li class="has-dropdown">
+              <a href="#">Услуги <span class="arrow">▼</span></a>
+              <ul class="dropdown-menu">
+                
+                <li class="has-nested">
+                  <a href="#">Гражданство <span class="arrow right-arrow">▶</span></a>
+                  <ul class="nested-menu">
+                    <li><div class="nested-group-title">Восточная и Южная Европа</div></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Румынии (Корни)'); return false;">Румыния</a></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Болгарии'); return false;">Болгария</a></li>
+                    <li><a href="#" onclick="openServiceModal('Венгрия (натурализация)'); return false;">Венгрия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Хорватии'); return false;">Хорватия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Словении'); return false;">Словения</a></li>
+                    <li><div class="nested-divider"></div></li>
+                    <li><div class="nested-group-title">Центр. и Зап. Европа</div></li>
+                    <li><a href="#" onclick="openServiceModal('Польша (Карта Поляка)'); return false;">Польша</a></li>
+                    <li><a href="#" onclick="openServiceModal('Германия (Переселенцы)'); return false;">Германия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Чехии'); return false;">Чехия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Гражданство Словакии'); return false;">Словакия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Италия (Jure Sanguinis)'); return false;">Италия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Ирландия'); return false;">Ирландия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Австрия (Жертвы репрессий)'); return false;">Австрия</a></li>
+                    <li><div class="nested-divider"></div></li>
+                    <li><div class="nested-group-title">Балтия и Ближний Восток</div></li>
+                    <li><a href="#" onclick="openServiceModal('Литва (Восстановление)'); return false;">Литва</a></li>
+                    <li><a href="#" onclick="openServiceModal('Латвия (Восстановление)'); return false;">Латвия</a></li>
+                    <li><a href="#" onclick="openServiceModal('Израиль (Даркон)'); return false;">Израиль</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-nested">
+                  <a href="#">ВНЖ и ПМЖ <span class="arrow right-arrow">▶</span></a>
+                  <ul class="nested-menu">
+                     <li><div class="nested-group-title">Западная Европа</div></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Испании (No Lucrativa)'); return false;">Испания (No Lucrativa)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Португалии (D7)'); return false;">Португалия (D7)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Франции (Visiteur)'); return false;">Франция (Visiteur)</a></li>
+                     <li><a href="#" onclick="openServiceModal('Италия (Elettiva)'); return false;">Италия (Elettiva)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Австрии (Квота)'); return false;">Австрия (Квота)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Швейцарии'); return false;">Швейцария</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Андорры'); return false;">Андорра</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Средиземноморье и Балканы</div></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Греции (FIP)'); return false;">Греция (FIP)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Кипра (Pink Slip)'); return false;">Кипр (Pink Slip)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Мальты'); return false;">Мальта</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Черногории'); return false;">Черногория</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Сербии'); return false;">Сербия</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Ближний Восток</div></li>
+                     <li><a href="#" onclick="openServiceModal('Резиденция ОАЭ'); return false;">ОАЭ (Дубай)</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-nested">
+                  <a href="#">Инвестиции <span class="arrow right-arrow">▶</span></a>
+                  <ul class="nested-menu">
+                     <li><div class="nested-group-title">Недвижимость</div></li>
+                     <li><a href="#" onclick="openServiceModal('Золотая виза Греции'); return false;">Греция (от 250k€)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ПМЖ Кипра (Инвестиции)'); return false;">Кипр (от 300k€)</a></li>
+                     <li><a href="#" onclick="openServiceModal('Золотая виза Испании'); return false;">Испания (от 500k€)</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Фонды Европы</div></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Венгрии (Фонды)'); return false;">Венгрия (от 250k€)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Португалии (Фонды)'); return false;">Португалия (от 500k€)</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Латвии (Инвестиции)'); return false;">Латвия (Фонды/Бизнес)</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Гражданство (Паспорт)</div></li>
+                     <li><a href="#" onclick="openServiceModal('Гражданство Вануату'); return false;">Вануату</a></li>
+                     <li><a href="#" onclick="openServiceModal('Карибские паспорта'); return false;">Сент-Китс, Антигуа...</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Ближний Восток</div></li>
+                     <li><a href="#" onclick="openServiceModal('Золотая виза ОАЭ'); return false;">ОАЭ (Дубай от 2M)</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-nested">
+                  <a href="#">Визы Талантов <span class="arrow right-arrow">▶</span></a>
+                  <ul class="nested-menu">
+                     <li><div class="nested-group-title">Digital Nomad</div></li>
+                     <li><a href="#" onclick="openServiceModal('Nomad Visa Испании'); return false;">Испания</a></li>
+                     <li><a href="#" onclick="openServiceModal('Виза D8 Португалии'); return false;">Португалия (D8)</a></li>
+                     <li><a href="#" onclick="openServiceModal('Nomad Visa Италии'); return false;">Италия</a></li>
+                     <li><a href="#" onclick="openServiceModal('Nomad Visa Хорватии'); return false;">Хорватия</a></li>
+                     <li><a href="#" onclick="openServiceModal('ВНЖ Венгрии (White Card)'); return false;">Венгрия</a></li>
+                     <li><a href="#" onclick="openServiceModal('Remote Work ОАЭ'); return false;">ОАЭ (Remote Work)</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Особые заслуги / Таланты</div></li>
+                     <li><a href="#" onclick="openServiceModal('Global Talent UK'); return false;">UK (Global Talent)</a></li>
+                     <li><a href="#" onclick="openServiceModal('O-1 / EB-2 NIW США'); return false;">США (O-1 / EB-2)</a></li>
+                     <li><a href="#" onclick="openServiceModal('Passeport Talent Франции'); return false;">Франция (Talent)</a></li>
+                     <li><div class="nested-divider"></div></li>
+                     <li><div class="nested-group-title">Startup (Для бизнеса)</div></li>
+                     <li><a href="#" onclick="openServiceModal('Startup Visa Испании'); return false;">Испания / Португалия</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li><a href="/reviews" class="active" style="color: var(--gold-main);">Отзывы</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a>
+          <a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"></path></svg></a>
+          <div class="lang-switch">
+             <a href="/" class="active">RU</a><span class="divider">|</span><a href="/en">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Индивидуальная консультация'); return false;" class="btn-primary">Консультация</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="reviews-hero">
+        <div class="container">
+          <h1>Отзывы и Истории Успеха</h1>
+          <p>Мы ценим приватность наших клиентов. Ниже представлены реальные истории, юридические кейсы и отзывы тех, кто прошел с нами путь легализации и согласился поделиться своим опытом анонимно или публично.</p>
+          
+          <div class="trust-stats">
+            <div class="stat-item">
+              <div class="stat-num">12+</div>
+              <div class="stat-desc">Лет практики</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">3500+</div>
+              <div class="stat-desc">Выданных паспортов</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">98.7%</div>
+              <div class="stat-desc">Успешных кейсов</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-content" style="background-color: var(--navy-dark);">
+        <div class="container">
+          <div class="masonry-grid">
+            
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>М</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Максим Воронов</div>
+                  <div class="brick-program">ВНЖ Испании (Digital Nomad)</div>
+                  <div class="brick-date">10 Апр 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Мы IT-компания, нужно было срочно релоцировать костяк команды (5 человек с семьями). До EuroStatus обращались в два 'известных' агентства, где нам просто скинули чек-лист из гугла и сказали собирать бумаги. Здесь же подход совершенно другой. Юристы сами подготовили контракты с нашими зарубежными заказчиками так, чтобы испанская налоговая сочла их идеальными. У одного разработчика была сложная ситуация с алиментами в РФ, из-за чего боялись отказа при проверке благонадежности. Ребята всё грамотно обосновали. В итоге карточки ВНЖ получили все, даже быстрее заявленного срока. Отработали каждый цент из своего гонорара.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/4.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>Е</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Елена Игнатьева</div>
+                  <div class="brick-program">Гражданство Израиля (Даркон)</div>
+                  <div class="brick-date">28 Мар 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Никогда не писала отзывы, но тут просто обязана. Мой дедушка по материнской линии был евреем, но в СССР ему в метрике вписали 'русский'. Из доказательств у нас было только одно свидетельство Красного Креста с ошибкой в фамилии (Игнатев вместо Игнатьев). Я думала, что это дохлый номер. Израильский консул при первой, самостоятельной попытке (до обращения в EuroStatus) просто развернул меня. В компании взялись за мой кейс: делали адвокатские запросы в ЗАГСы Сибири, нашли военный билет прадеда, через суд доказали родство. На консульскую проверку шла трясясь, но с такой папкой документов, что консул задал ровно два вопроса. Сейчас я уже гражданка Израиля. Бесконечно благодарна Виктору и всей команде!
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_2.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>Д</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Дмитрий С.</div>
+                  <div class="brick-program">Гражданство Румынии</div>
+                  <div class="brick-date">14 Мар 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   К выбору компании подходил с паранойей. Рынок серый, куча мошенников, которые рисуют документы в фотошопе. Выбрал EuroStatus из-за того, что они прописывают ответственность в договоре и работают только с реальными архивами. Корни у меня были по бабушке из Черновицкой области. Подача в Бухаресте прошла как по маслу — меня встретили, провели без очереди, всё перевели. Да, вышло дольше, чем рекламные '6 месяцев' (ждал приказ почти полтора года), но зато я спал спокойно. К присяге готовили по зуму с преподавателем румынского, выучил текст и отвечал консулу без проблем. Паспорт на руках, летаю по Европе без виз.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_3.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>А</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Алина Мусаева</div>
+                  <div class="brick-program">Золотая Виза Испании</div>
+                  <div class="brick-date">02 Мар 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Покупала виллу в Аликанте. Изначально мой риэлтор предложил 'своего' местного юриста. Хорошо, что я отказалась. Как выяснилось позже, та вилла имела обременения, и с ней ВНЖ инвестора мне бы не светил. Эксперты EuroStatus не только занимались иммиграционной частью, но и проверили чистоту сделки. Они забраковали первый объект, помогли безопасно провести деньги из РФ (что сейчас тот еще квест), открыли счет в испанском банке. Карточки резидента получили сразу на три года на всю семью. Максимально профессионально.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/2.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>Т</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Тимур К.</div>
+                  <div class="brick-program">Гражданство Вануату (Инвестиции)</div>
+                  <div class="brick-date">18 Фев 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Кейс был нестандартный: мне нужен был паспорт для открытия зарубежных счетов на компанию, и сроки горели (буквально месяц на всё из-за контрактов в Азии). Европу даже не рассматривали. Предложили Вануату. Сначала отнесся скептически — островное государство, как это вообще работает? Но ребята расписали весь Due Diligence. Документы подавали удаленно, криптой оплатил инвестиционный взнос. Через 4 недели курьер DHL привез мне паспорт прямо в московский офис. Счет в Дубае с ним открыли за два дня. Идеальный инструмент для бизнеса.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_5.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>А</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Антон и Валерия</div>
+                  <div class="brick-program">Виза O-1 (США)</div>
+                  <div class="brick-date">05 Фев 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Я product-дизайнер, жена работает в моушн-дизайне. Хотели переехать в Штаты, но лотерею H1B проиграли дважды. Пришли в EuroStatus просто проконсультироваться, есть ли варианты. Нам собрали петицию на визу талантов O-1. Честно, я не верил, что моих публикаций в локальных медиа хватит. Но их юристы выстроили такую блестящую стратегию! Они связали мои работы с международными наградами, помогли получить сильные рекомендательные письма от топовых CEO из индустрии. Морально поддерживали нас 8 месяцев. Петицию одобрили без RFE (доп. запросов). Мы уже в Калифорнии, спасибо!
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_6.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>С</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Семья Романовых</div>
+                  <div class="brick-program">Репатриация в Болгарию</div>
+                  <div class="brick-date">22 Янв 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Долго выбирали между Румынией и Болгарией. Так как у прадеда в селе под Одессой в архивах нашли запись 'болгарин', юрист настоял именно на этой программе. Процесс не быстрый, сразу говорю. Но главное — прозрачность. Никаких 'завтраков'. Каждые два месяца приходил отчет о статусе дела. Была проблема со справкой о несудимости (она просрочилась, пока ждали апостиль), но агенты EuroStatus в Софии уладили вопрос напрямую в министерстве, не пришлось второй раз лететь. Статус получили, паспорта оформлены. Дети поступили в европейский вуз уже как граждане ЕС.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_7.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>В</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Вячеслав М.</div>
+                  <div class="brick-program">Гражданство Румынии</div>
+                  <div class="brick-date">14 Янв 2026</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Меня кинули посредники три года назад. Взяли 5000 евро, сделали 'левую' справку СБУ и пропали. Я был в отчаянии, потому что боялся, что попал в черные списки консульства из-за фальшивки. Пришел в EuroStatus с трясущимися руками. Они провели проверку через свои каналы в АНЧ (Агентство по гражданству Румынии) — оказалось, те мошенники даже не подавали мое дело, слава богу. Мы начали всё с нуля. Настоящих корней не нашли, но юристы предложили абсолютно легальный путь через ВНЖ и натурализацию во Франции. Дороже, дольше, но зато я 100% уверен в каждом документе. Сейчас уже год живу с картой VLF.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_8.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>О</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Ольга и дети</div>
+                  <div class="brick-program">ВНЖ Франции</div>
+                  <div class="brick-date">10 Дек 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Хочу отметить человечность команды. У меня был тяжелый развод, нужно было срочно увезти детей (один с особенностями развития) в страну с хорошей медициной и экологией. Выбрали Францию (Визитёр). Денег было впритык по их финансовым требованиям. Юристы подсказали, как правильно показать сбережения, как оформить спонсорское письмо от родственников, чтобы у консула не возникло сомнений. Они же помогли устроить старшего в школу удаленно (это было требованием посольства). Визы выдали всей семье. Вы не просто юристы, вы спасли меня.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/7.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>К</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Кирилл</div>
+                  <div class="brick-program">ВНЖ Кипра</div>
+                  <div class="brick-date">25 Ноя 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Обращался за оптимизацией налогов (статус Non-Dom на Кипре). У меня несколько компаний в разных юрисдикциях, и мне нужно было, чтобы ВНЖ не повлекло за собой двойную налоговую нагрузку на мои дивиденды. Юристы Евростатус отработали в связке с кипрскими профи: открыли счет в Bank of Cyprus (что сейчас крайне сложно с паспортом РФ), правильно структурировали мой доход, подали на Pink Slip. Всё сделали под ключ за 6 недель. Очень сильная консалтинговая база.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_10.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>М</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Мария К.</div>
+                  <div class="brick-program">Гражданство Румынии</div>
+                  <div class="brick-date">11 Ноя 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Пришла 'просто спросить', так как была уверена, что корней у меня нет. Фамилии все исконно русские. Виктор предложил провести бесплатный генеалогический аудит. И представьте мой шок, когда через 3 недели мне присылают выписку из архива ЗАГСа Одесской области, где указано, что мама моей бабушки родилась на территории, подконтрольной Румынии в 1935 году! Это был джекпот. Договор подписали сразу же. Досье собрали за 2 месяца. В понедельник была присяга — всё прошло отлично.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/6.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>Е</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Евгений Смирнов</div>
+                  <div class="brick-program">ВНЖ ОАЭ (Дубай)</div>
+                  <div class="brick-date">29 Окт 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Открывали компанию в Free Zone (IFZA). Местные помогалы в Дубае пытались 'нагреть' на скрытых платежах за лицензии. Обратился в EuroStatus по совету партнера, чтобы они сделали всё прозрачно. Заплатил один раз фикс по контракту, никаких скрытых fee. За 10 дней сделали компанию, Establishment Card, оформили Emirates ID мне и ВНЖ для жены. Банковский счет в Emirates NBD открыли без лишних вопросов, так как профиль компании был составлен идеально. Уровень сервиса — 11 из 10.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_12.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>И</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Ирина и Марк</div>
+                  <div class="brick-program">Гражданство Израиля (Даркон)</div>
+                  <div class="brick-date">10 Окт 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Была сложная история брака: муж еврей, но мы в браке меньше года. Знающие люди в курсе, что консул обычно к таким парам относится как к фиктивным, и выдают вместо гражданства Алеф-5 (ВНЖ), и то со скрипом. Нас готовили к интервью 'на убой', неделю проговаривали все возможные вопросы консула про нашу жизнь, совместные финансы, фото. Собрали гигантский талмуд доказательств отношений. На консульской проверке нас развели по разным кабинетам, вопросы были жесткие. Но благодаря подготовке мы ответили синхронно. Муж получил Даркон, я статус партнера без проблем. Спасибо за ваш профессионализм!
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_13.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>И</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Илья</div>
+                  <div class="brick-program">Global Talent Visa (UK)</div>
+                  <div class="brick-date">16 Сен 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Пытался оформить визу таланта в Великобританию самостоятельно. Получил отказ от Tech Nation (не хватило доказательств инновационности моего стартапа). Потерял кучу времени и денег. Евростатус подключились на этапе апелляции/повторной подачи. Сразу сказали: 'Твое сопроводительное письмо не продает твой продукт'. Мы переупаковали кейс. Акцент сделали не на коде, а на влиянии на индустрию. Собрали 12 новых статей. Подали заново. Через 3 недели пришло заветное Endorsement. В ноябре перевез семью в Лондон.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_14.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>С</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Светлана Р.</div>
+                  <div class="brick-program">Гражданство Румынии</div>
+                  <div class="brick-date">08 Сен 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Я пенсионерка, мне 64 года. Дочь переехала в Германию по рабочей визе, и видеться стало невыносимо сложно из-за этих визовых ограничений. Ребята из EuroStatus проявили столько заботы! Раскопали документы моего дедушки из Черновцов, везде водили за ручку, переводили каждое слово на подаче документов в Бухаресте. Когда пришла пора сдавать присягу, я очень переживала, что не выучу текст на румынском. Репетитор компании занимался со мной буквально как с ребенком. Я выучила язык на базовом уровне. Консул даже похвалил мой акцент! Теперь езжу к внукам в Мюнхен в любое время.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/3.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>А</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Артур, CEO IT-компании</div>
+                  <div class="brick-program">Португалия D7 / D8</div>
+                  <div class="brick-date">22 Авг 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Нужно было легализоваться в Европе без жесткой привязки к офису. Решили делать португальскую D8 (для удаленщиков). Ситуация осложнялась тем, что мой доход распределен между ИП в Армении, LLP в Англии и криптой. Обычные юристы разводили руками — 'слишком сложно доказать SEF регулярность дохода'. EuroStatus сформировали бронебойный финансовый аудит. Заверили все скриншоты с бирж, связали транзакции, написали подробнейшее Explanation Letter для консульства. В сентябре получил карточку резидента в Лиссабоне. Топ-сервис.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_16.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>П</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Павел Игнатов</div>
+                  <div class="brick-program">EB-5 Виза (США)</div>
+                  <div class="brick-date">05 Авг 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Инвестировал 800к по программе EB-5. Сумма не маленькая, рисковать не был готов. Поэтому искал консалтинг, который не просто 'готовит бумажки', а умеет проводить финансовый аудит Региональных Центров США. Юристы Евростатуса отсеяли три центра из-за слабых финансовых гарантий по возврату средств. Выбрали самый консервативный проект в недвижимости, где был 'soft landing'. Петицию I-526E одобрили, сейчас живу с условной Грин Картой, дети пошли в школу в Майами.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_17.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>А</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Ангелина</div>
+                  <div class="brick-program">Виза в Испанию (No Lucrativa)</div>
+                  <div class="brick-date">18 Июл 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Подавалась на ВНЖ без права на работу (No Lucrativa). Я фрилансер, работаю на себя, но проблема в том, что Испания ОЧЕНЬ не любит фрилансеров на этой визе — они хотят видеть пассивный доход. Юрист компании посоветовал мне на полгода вообще заморозить ИП, и показать доходы исключительно с аренды четырех квартир и дивиденды от ЦБ. Подготовили такой пакет, что ни одной справки не запросили дополнительно. Визу в консульстве в Москве вклеили ровно за 18 дней! Спасибо!
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/1.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>М</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Михаил Петров</div>
+                  <div class="brick-program">Гражданство Болгарии</div>
+                  <div class="brick-date">04 Июл 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Были уверены, что у нас всё просто — отец напрямую болгарин по свидетельству о рождении. Но всплыла чудовищная юридическая проблема: в 90-е кто-то в сельсовете при замене паспорта сделал опечатку, и по бумагам он числился совсем под другим отчеством. Юристы через судебный иск в течение трех месяцев восстанавливали актовую запись, доказали техническую ошибку. Подача досье прошла успешно. Приказ вышел через 24 месяца, всё законно и железобетонно.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_19.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>Д</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Денис и Анна</div>
+                  <div class="brick-program">Карта Поляка -&gt; Гражданство ЕС</div>
+                  <div class="brick-date">15 Июн 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Была Карта Поляка, но не было понимания, как с ней быстрее легализоваться и получить гражданство без потери текущего паспорта. Юристы составили четкий пошаговый план натурализации: рабочая виза -&gt; ПМЖ -&gt; через год подача на гражданство у Президента. Они оформляли нас как учредителей спулки (Sp. z o.o.) в Варшаве, сделали весь бухучет легальным и чистым. Процесс был досконально контролируемым. Паспорта Республики Польша на руках. Очень достойно.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="margin-top: 25px;">
+                📸 Место для фото/скана документа
+                <img src="/placeholder_doc_20.jpg" alt="Proof Document" style="display:none;">
+              </div>
+            </div>
+        
+            <div class="review-brick">
+              <div class="brick-header">
+                <div class="brick-avatar-placeholder">
+                  <span>С</span>
+                </div>
+                <div class="brick-meta">
+                  <div class="brick-name">Станислав</div>
+                  <div class="brick-program">Гражданство Румынии</div>
+                  <div class="brick-date">20 Май 2025</div>
+                </div>
+              </div>
+              <div class="brick-stars">★★★★★</div>
+              <div class="brick-text-content">
+                 <div class="brick-text clamped">
+                   Самый длинный путь, но оно того стоило. Обратился в EuroStatus еще в 2023 году, когда всё только начало усложняться. Найти документы деда в молдавских архивах оказалось квестом, так как архив был частично перевезен. Юристы работали там физически, не отправляя просто запросы по почте! Это сыграло решающую роль. Получив 'Досар', я просто мониторил сайт. Когда пришло письмо о выходе в приказ, компания взяла на себя бронирование очереди на присягу. Выучить тест было несложно с их материалами. Вручение сертификата о гражданстве — это момент, который меняет жизнь.
+                 </div>
+                 <button class="read-more-btn" onclick="this.previousElementSibling.classList.toggle('clamped'); this.style.display='none'">Читать полностью</button>
+              </div>
+              
+              <div class="brick-attachment" style="padding: 0; background: none; border: none; margin-top: 25px; width: 100%; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <img src="/Otzivy/5.jpg" alt="Фото с клиентом" style="display:block; width:100%; height:100%; object-fit: cover; object-position: center;">
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="consultation" class="cta-form-section" style="margin-top: 40px;">
+        <div class="container">
+          <div class="cta-form-wrapper">
+            <div class="cta-text">
+              <h2>Готовы начать свою историю успеха?</h2>
+              <p>Оставьте заявку на бесплатный юридический аудит. Наш эксперт разберет вашу ситуацию и предложит самый надежный путь легализации.</p>
+            </div>
+            <form class="lead-form">
+              <input type="text" placeholder="Ваше имя" required="">
+              <input type="tel" placeholder="Номер телефона" required="">
+              <button type="submit" class="btn-primary" style="width: 100%;">Записаться на разбор</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text">
+            <span class="logo-euro">EURO</span>
+            <span class="logo-status">STATUS</span>
+          </div>
+        </a>
+            <p class="footer-mission">Официальное и полностью легальное оформление гражданства Евросоюза. Работаем строго по договору.</p>
+            <p class="reg-number" style="opacity: 0.7; margin-top: 10px;">A.S. CONSULTING COMPANY S.R.L.<br>CUI (Код Регистрации): 17839407</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/reviews">Отзывы клиентов</a></li>
+              <li><a href="/faq">Вопросы (FAQ)</a></li>
+              <li><a href="/contact">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Наши Услуги</h4>
+            <ul>
+              <li><a href="#">Гражданство ЕС</a></li>
+              <li><a href="#">Гражданство США</a></li>
+              <li><a href="#">Гражданство Израиля</a></li>
+              <li><a href="#">Гражданство Азии</a></li>
+              <li><a href="#">ВНЖ / ПМЖ</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list premium-icons">
+              <li title="Главный операционный офис"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Румыния: Victoria Business Center, Бухарест</li>
+              <li title="Представительство"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Болгария: Crystal Business Center, София</li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> <a href="mailto:eurostatus@ro.ru">eurostatus@ro.ru</a> <span style="font-size: 0.85em; opacity: 0.8;">(Для документов)</span></li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> Пн-Пт: 10:00 - 19:00</li>
+              <li class="footer-socials" style="display: flex; gap: 15px; margin-top: 25px;">
+<a href="https://wa.me/40763973670" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. Все права защищены.</p>
+          <div class="legal-links">
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/terms">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Crisp Script -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d4ad84eb-f3ba-484b-9485-a772c7601dc2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  
+<script>
+function openServiceModal(serviceName) {
+    const modal = document.getElementById('consultationModal') || document.getElementById('myModal');
+    const input = document.getElementById('modalServiceTopic') || document.querySelector('input[name="topic"]');
+    
+    if(input) input.value = serviceName;
+    
+    if(modal) {
+        modal.classList.add('active');
+        modal.style.display = 'flex';
+    }
+}
+</script>
+
+
+
+<div id="preact-border-shadow-host" popover="manual" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; padding: 0px; margin: 0px; inset: 0px; position: fixed; width: 100vw; height: 100vh; background: transparent; pointer-events: none;"></div><div class="crisp-client" aria-live="polite" translate="no" tabindex="-1" lang="ru" dir="ltr" style="--crisp-color-theme-10: 240, 242, 245; --crisp-color-theme-20: 239, 245, 254; --crisp-color-theme-100: 181, 185, 190; --crisp-color-theme-200: 50, 62, 81; --crisp-color-theme-300: 50, 61, 80; --crisp-color-theme-400: 49, 60, 79; --crisp-color-theme-500: 45, 55, 72; --crisp-color-theme-600: 38, 46, 61; --crisp-color-theme-700: 33, 41, 54; --crisp-color-theme-800: 29, 35, 46; --crisp-color-theme-900: 22, 27, 36; --crisp-color-theme-reverse: 255, 255, 255;"><div class="cc-1lkve"></div><div class="cc-yv368" id="crisp-chatbox" data-hidden="false" data-force-show="false" data-color-mode="light" data-availability="online" data-lock-maximized="false" data-website-logo="false" data-last-operator-face="false" data-ongoing-operator-face="false" data-availability-tooltip="false" data-hide-vacation="false" data-blocked="false" data-mobile-view="false" data-full-view="false" data-small-view="false" data-large-view="true" data-has-local-messages="true" data-was-availability-online="true" data-is-activity-ongoing="true" data-hide-on-away="false" data-hide-on-mobile="false" data-position-reverse="false"><div class="cc-1kr6o cc-cxjxh cc-s0g61 cc-jx6a3"><div class="cc-rsqmy" data-visible="false" data-chat-status="ongoing" data-animate-minimize="false" data-animate-maximize="false" data-v-app="" style="width: 400px !important; height: 730px !important;"><div class="cc-162fn crisp-client cc-s0g61 cc-162fn--no-header-separator"><div class="cc-1gxej"><div class="cc-1nvtt"><div class="cc-1g67w cc-1g67w--mode-chat cc-1g67w--status-ongoing cc-1g67w--color-mode-light cc-1g67w--tile-tic-tac-toe cc-1g67w--large-view cc-1g67w--has-tile cc-1g67w--activity-metrics cc-1g67w--has-transition"><span class="cc-167kp cc-10lqw"><div class="cc-zm8k6"><div aria-active="true" aria-label="Главная" class="cc-3a4ox cc-3a4ox--home cc-1uk71 cc-1uk71--home cc-3a4ox--icon-only cc-5f8k4" tabindex="0" role="button"><span class="cc-kw7y0 cc-1o1tf"></span><!----></div></div><div class="cc-q4h76"><div aria-active="false" aria-label="Чат" class="cc-3a4ox cc-3a4ox--chat cc-1uk71 cc-1uk71--chat cc-3a4ox--active cc-16grk cc-5f8k4" tabindex="0" role="button"><span class="cc-kw7y0 cc-1o1tf"></span><span class="cc-1c6ea cc-vqf16">Чат</span></div></div><div class="cc-5ff8f"></div></span><div class="cc-i33xt"><span class="cc-1fu54 cc-1fu54--status-ongoing"><span class="cc-24n4a cc-24n4a--status-ongoing cc-11qhx"><span class="cc-apf4q"><span class="cc-1cx6o"><svg class="cc-1pozz"><mask id="avatar_ongoing"><circle class="cc-15hfi" fill="white"></circle><circle class="cc-15hfi" fill="black"></circle></mask><g mask="url(#avatar_ongoing)"><rect class="cc-7pp6p"></rect><image class="cc-1oiw4" xlink:href="https://client.crisp.chat/static/images/client/avatar-default.svg"></image><image class="cc-1oiw4" xlink:href="https://image.crisp.chat/process/thumbnail/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2F-%2Ff%2F6%2F9%2F6%2Ff6960c8368f50800%2Fava_12px18n.jpg&amp;width=240&amp;height=240&amp;1775720710781"></image></g></svg><span class="cc-35bgu"></span></span><span class="cc-7iqkz"></span></span></span><span class="cc-1akzq cc-1akzq--status-ongoing"><span class="cc-1cel7"><span class="cc-1fbok cc-vqf16"><span class="cc-1y3g3 cc-1oaji">Виктор</span><span class="cc-1y3g3">от EURO STATUS</span><span class="cc-7iqkz"></span></span></span></span><span class="cc-x251c cc-x251c--smallish cc-18w4r"><div class="cc-qiy3s cc-sp3ed" aria-label="Другие способы связи" tabindex="0" role="button"><span class="cc-1p90b cc-17hpu cc-42mwu"><span class="cc-1f4cg cc-1plpv">Другие способы связи</span></span><span class="cc-gjgoc"></span></div><!----></span></span></div><span class="cc-5v1mb cc-cva33"><span class="cc-5p3bk" aria-label="Быстрые действия" tabindex="0" role="button"><span class="cc-2q3g5"></span></span><!----></span></div></div><div class="cc-1xtta"><div class="cc-1d9j0"><div class="cc-p7brc"><div class="cc-1d5ma"><div class="cc-1q1x7 cc-1q1x7--clickable cc-1jz09 cc-1jz09--reconnect-inactive"><div class="cc-jp2zu"><span class="cc-s7f5d"></span><span class="cc-10480"><span class="cc-1of2h cc-vqf16">Сеанс завершен из-за долгого отсутствия активности.</span><span class="cc-1w05n cc-vqf16">Напишите что-нибудь, чтобы возобновить чат.</span></span></div></div><!----><div class="cc-1fk5y cc-1fk5y--status-ongoing cc-1fk5y--has-offline cc-1fk5y--has-local-messages" id="cc-1fk5y" aria-live="polite" aria-atomic="false" tabindex="0" role="dialog"><div class="cc-cb69k"><div class="cc-1y2jb wp-exclude-emoji cc-1y2jb--status-ongoing cc-1mfy9"><div class="cc-1sqaq" date-has-timestamp="false" tabindex="-1" aria-live="polite" aria-relevant="additions"><!----><div class="cc-nb9p2 cc-nb9p2--operator cc-nb9p2--text cc-nb9p2--first-of-group cc-nb9p2--last-of-group cc-nb9p2--last-of-thread"><span class="cc-lpnsx cc-1egul"><span class="cc-1ikzx cc-1e566" style="background-image: url(&quot;https://image.crisp.chat/avatar/website/d4ad84eb-f3ba-484b-9485-a772c7601dc2/120/?1775720710781&quot;) !important;"></span></span><!----><span class="cc-v6b8k"><span class="cc-1ab24 cc-sp3ed"><span class="cc-iw847 cc-1plpv cc-rzz1b"><span class="cc-1p1u8"><span class="cc-1yk1e cc-oao3j">Здравствуйте! Юридический отдел компании EuroStatus. Подсказать вам подробности по программам оформления гражданства ЕС?</span><!----></span></span><!----><span class="cc-7iqkz"></span></span><!----><!----></span><span class="cc-7iqkz"></span><!----><!----><!----><span class="cc-7iqkz"></span></div><span class="cc-7iqkz"></span></div><div class="cc-1sqaq" date-has-timestamp="true" tabindex="-1" aria-live="polite" aria-relevant="additions"><div class="cc-nlo6x"><div class="cc-fv6d9"><div class="cc-1vof0 cc-vqf16">Четверг, 9 Апрель</div></div></div><div class="cc-nb9p2 cc-nb9p2--operator cc-nb9p2--text cc-nb9p2--first-of-group cc-nb9p2--last-of-group cc-nb9p2--last-of-thread"><span class="cc-lpnsx cc-1egul"><span class="cc-1ikzx cc-1e566" style="background-image: url(&quot;https://image.crisp.chat/process/thumbnail/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2F-%2Ff%2F6%2F9%2F6%2Ff6960c8368f50800%2Fava_12px18n.jpg&amp;width=120&amp;height=120&amp;1775720710781&quot;) !important;"></span></span><span class="cc-v3lu6 cc-1plpv">Виктор<!----></span><span class="cc-v6b8k"><span class="cc-1ab24 cc-sp3ed"><span class="cc-iw847 cc-1plpv cc-rzz1b"><span class="cc-1p1u8"><span class="cc-1yk1e cc-oao3j">Здравствуйте! <span class="cc-16j3k" data-size="small">👋</span> Нужна помощь с подбором программы гражданства ЕС? Задавайте ваши вопросы, я на связи.</span><!----></span></span><span class="cc-lxv18 cc-1p90b cc-17hpu cc-42mwu"><span class="cc-1f4cg cc-1plpv"><span class="cc-qnx5g">час назад</span><!----></span></span><span class="cc-7iqkz"></span></span><!----><!----></span><span class="cc-7iqkz"></span><!----><!----><!----><span class="cc-7iqkz"></span></div><span class="cc-7iqkz"></span></div><div class="cc-1n8di"><!----></div></div></div></div><!----><!----></div></div></div><div class="cc-1u48p cc-1u48p--has-branding"><div class="cc-1hl2w"></div><div class="cc-1lmpz"><div class="cc-fjbht"><div class="cc-167h3"></div><div class="cc-1w1z7 cc-vqf16">Прикрепить файл</div></div></div></div><div class="cc-ebf9b"><div class="cc-1rjtq"><!----><div class="cc-a6vux"><form class="cc-9ddvr" name="form_message" action="#" method="post"><textarea class="cc-ut8v8 cc-rzz1b cc-1plpv" placeholder="Введите ваше сообщение..." aria-label="Введите ваше сообщение..." name="message" rows="1" dir="auto" autocapitalize="off" autocomplete="off" aria-controls="cc-1fk5y" tab="0" tabindex="0" style="overflow: hidden; overflow-wrap: break-word; height: 18px;"></textarea></form></div><div class="cc-o5f8e cc-1tb4z"><div class="cc-1p4ar"><span class="cc-1ct7f cc-sp3ed" aria-label="Смайлики" data-state="none" data-type="smiley" tabindex="0" role="button"><span class="cc-1p90b cc-17hpu cc-dcrm9"><span class="cc-1f4cg cc-1plpv">Смайлики</span></span><span class="cc-dzihc"></span></span><span class="cc-1ct7f cc-sp3ed" aria-label="Прикрепить файл" data-state="none" data-type="file" tabindex="0" role="button"><span class="cc-1p90b cc-17hpu cc-42mwu"><span class="cc-1f4cg cc-1plpv">Прикрепить файл</span></span><span class="cc-th8ai"><input class="cc-1oohf" type="file" name="attach_file" title="" tabindex="-1" aria-hidden="true" multiple=""></span><span class="cc-dzihc"></span></span><span class="cc-1ct7f cc-sp3ed" aria-label="Запись аудиосообщения" data-state="none" data-type="speech" tabindex="0" role="button"><span class="cc-1p90b cc-17hpu cc-42mwu"><span class="cc-1f4cg cc-1plpv">Запись аудиосообщения</span></span><span class="cc-dzihc"></span></span><!----><span class="cc-7iqkz"></span></div><div class="cc-10cj4"><span aria-label="Отправить" class="cc-n5v9k" tabindex="0" role="button"><span class="cc-3xzov"></span></span></div></div></div><div class="cc-z17nb cc-z17nb--status-ongoing cc-1gah5"><a class="cc-1keia" href="https://crisp.chat/en/livechat/?ref=chatbox&amp;domain=localhost&amp;name=EURO%20STATUS" rel="noopener noreferrer nofollow" target="_blank"><span class="cc-zhr7b cc-zhr7b--prefix cc-1plpv">We run on</span><span class="cc-1h63e"></span><span class="cc-zhr7b cc-zhr7b--name cc-vqf16">Crisp</span><span class="cc-7iqkz"></span></a></div></div></div><!----><!----><!----><!----><!----></div><!----><!----><!----></div></div><div class="cc-18ov6" data-is-failure="false" tabindex="0" role="button" data-visible="false" data-maximized="false" data-animate-maximize="false" data-animate-minimize="false" data-pane-animate-entrance="false" aria-label="Открыть чат"><span class="cc-1442g"><!--v-if--></span><span class="cc-1qbp0" data-is-ongoing="false" data-has-unread="false"><span class="cc-otlyh" data-prefer-search="false" data-id="chat_opened"><span class="cc-11f3x"><span class="cc-fajze cc-1egul"><span class="cc-1p2bq cc-1e566" style="background-image: url(&quot;https://image.crisp.chat/process/thumbnail/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2F-%2Ff%2F6%2F9%2F6%2Ff6960c8368f50800%2Fava_12px18n.jpg&amp;width=240&amp;height=240&amp;1775720710781&quot;) !important;"></span></span></span></span><span class="cc-1m2rp"></span><!--v-if--></span></div><span class="cc-lpuhc" data-visible="false" data-animate-minimize="false" data-animate-maximize="false"><span class="cc-uh1kj"></span></span></div></div><div class="cc-yv368 cc-vx6i0"></div><div class="cc-yv368 cc-1tx1r"></div></div>
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body></html>
