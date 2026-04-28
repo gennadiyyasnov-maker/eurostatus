@@ -240,7 +240,7 @@
                     
                     <!-- 1. Заявитель -->
                     <div class="form-section">
-                        <h3>1. Заявитель (Вы)</h3>
+                        <h3>1. Ваши данные</h3>
                         <div class="person-block">
                             <div class="grid-2-col">
                                 <div class="input-group">
@@ -248,154 +248,21 @@
                                     <input type="text" name="applicant_fio" required placeholder="Иванов Иван Иванович">
                                 </div>
                                 <div class="input-group">
-                                    <label>ФИО при рождении</label>
-                                    <input type="text" name="applicant_fio_birth" placeholder="Если менялось">
-                                </div>
-                                <div class="input-group">
-                                    <label>Дата рождения *</label>
-                                    <input type="date" name="applicant_birth_date" required>
-                                </div>
-                                <div class="input-group">
-                                    <label>Место рождения *</label>
-                                    <input type="text" name="applicant_birth_place" required placeholder="Город, область, страна">
-                                </div>
-                                <div class="input-group">
-                                    <label>Гражданство *</label>
-                                    <input type="text" name="applicant_citizenship" required placeholder="Например: РФ">
-                                </div>
-                                <div class="input-group">
                                     <label>Телефон для связи *</label>
                                     <input type="tel" name="phone" required placeholder="+7 (999) 000-00-00">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Родители -->
-                    <div class="form-section">
-                        <h3>2. Родители</h3>
-                        
-                        <div class="person-block">
-                            <h4>Отец</h4>
-                            <div class="grid-2-col">
-                                <div class="input-group">
-                                    <label>ФИО</label>
-                                    <input type="text" name="father_fio" placeholder="ФИО отца">
-                                </div>
-                                <div class="input-group">
-                                    <label>ФИО при рождении</label>
-                                    <input type="text" name="father_fio_birth" placeholder="ФИО при рождении">
-                                </div>
-                                <div class="input-group">
-                                    <label>Дата рождения</label>
-                                    <input type="text" name="father_birth_date" placeholder="ДД.ММ.ГГГГ или год">
-                                </div>
-                                <div class="input-group">
-                                    <label>Место рождения</label>
-                                    <input type="text" name="father_birth_place" placeholder="Место рождения">
-                                </div>
                                 <div class="input-group" style="grid-column: 1 / -1;">
-                                    <label>Гражданство</label>
-                                    <input type="text" name="father_citizenship" placeholder="Гражданство">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="person-block">
-                            <h4>Мать</h4>
-                            <div class="grid-2-col">
-                                <div class="input-group">
-                                    <label>ФИО</label>
-                                    <input type="text" name="mother_fio" placeholder="ФИО матери">
-                                </div>
-                                <div class="input-group">
-                                    <label>ФИО при рождении (девичья)</label>
-                                    <input type="text" name="mother_fio_birth" placeholder="Девичья фамилия">
-                                </div>
-                                <div class="input-group">
-                                    <label>Дата рождения</label>
-                                    <input type="text" name="mother_birth_date" placeholder="ДД.ММ.ГГГГ или год">
-                                </div>
-                                <div class="input-group">
-                                    <label>Место рождения</label>
-                                    <input type="text" name="mother_birth_place" placeholder="Место рождения">
-                                </div>
-                                <div class="input-group" style="grid-column: 1 / -1;">
-                                    <label>Гражданство</label>
-                                    <input type="text" name="mother_citizenship" placeholder="Гражданство">
+                                    <label>Что известно о корнях? *</label>
+                                    <textarea name="great_grandparents_info" rows="4" required placeholder="Напишите кратко, что известно о происхождении предков (например: дедушка родился в Болгарии/Румынии, или 'пока ничего не известно')"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 3. Бабушки и дедушки -->
+                    <!-- 2. Пакет услуг -->
+                    
                     <div class="form-section">
-                        <h3>3. Дедушки и Бабушки</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: #666;">Именно по этой линии чаще всего находятся корни для гражданства ЕС.</p>
-                        
-                        <div class="grid-2-col">
-                            <div class="person-block">
-                                <h4>Дедушка по папиной линии</h4>
-                                <div class="input-group"><input type="text" name="gf_father_fio" placeholder="ФИО"></div>
-                                <div class="input-group"><input type="text" name="gf_father_birth" placeholder="Дата рождения"></div>
-                                <div class="input-group"><input type="text" name="gf_father_place" placeholder="Место рождения"></div>
-                            </div>
-                            <div class="person-block">
-                                <h4>Бабушка по папиной линии</h4>
-                                <div class="input-group"><input type="text" name="gm_father_fio" placeholder="ФИО (вкл. девичью)"></div>
-                                <div class="input-group"><input type="text" name="gm_father_birth" placeholder="Дата рождения"></div>
-                                <div class="input-group"><input type="text" name="gm_father_place" placeholder="Место рождения"></div>
-                            </div>
-                            <div class="person-block">
-                                <h4>Дедушка по маминой линии</h4>
-                                <div class="input-group"><input type="text" name="gf_mother_fio" placeholder="ФИО"></div>
-                                <div class="input-group"><input type="text" name="gf_mother_birth" placeholder="Дата рождения"></div>
-                                <div class="input-group"><input type="text" name="gf_mother_place" placeholder="Место рождения"></div>
-                            </div>
-                            <div class="person-block">
-                                <h4>Бабушка по маминой линии</h4>
-                                <div class="input-group"><input type="text" name="gm_mother_fio" placeholder="ФИО (вкл. девичью)"></div>
-                                <div class="input-group"><input type="text" name="gm_mother_birth" placeholder="Дата рождения"></div>
-                                <div class="input-group"><input type="text" name="gm_mother_place" placeholder="Место рождения"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4. Прабабушки и прадедушки (Опционально) -->
-                    <div class="form-section">
-                        <h3>4. Прадедушки и Прабабушки (Опционально)</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: #666;">Заполните, если знаете информацию о более глубоких корнях.</p>
-                        <div class="input-group">
-                            <textarea name="great_grandparents_info" rows="5" placeholder="Напишите всё, что известно о прадедушках и прабабушках (ФИО, годы жизни, где родились/жили)..."></textarea>
-                        </div>
-                    </div>
-
-                    <!-- 5. Наличие документов -->
-                    <div class="form-section">
-                        <h3>5. Наличие документов</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 15px; color: #666;">Отметьте документы, которые есть у вас на руках (оригиналы или копии).</p>
-                        
-                        <div class="grid-2-col">
-                            <div>
-                                <div class="checkbox-group"><input type="checkbox" id="d1" name="docs[]" value="Внутренний паспорт (все страницы)"><label for="d1">Внутренний паспорт (все страницы)</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d2" name="docs[]" value="Загранпаспорт"><label for="d2">Загранпаспорт (разворот)</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d3" name="docs[]" value="Св-во о рождении заявителя"><label for="d3">Свидетельство о рождении (Ваше)</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d4" name="docs[]" value="Св-во о браке заявителя"><label for="d4">Свидетельство о браке (Ваше)</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d5" name="docs[]" value="Св-во о рождении матери"><label for="d5">Свидетельство о рождении матери</label></div>
-                            </div>
-                            <div>
-                                <div class="checkbox-group"><input type="checkbox" id="d6" name="docs[]" value="Св-во о рождении отца"><label for="d6">Свидетельство о рождении отца</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d7" name="docs[]" value="Св-во о браке родителей"><label for="d7">Свидетельство о браке родителей</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d8" name="docs[]" value="Св-ва дедушек/бабушек"><label for="d8">Свидетельства о рождении бабушки/дедушки</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d9" name="docs[]" value="Св-во о браке дедушек/бабушек"><label for="d9">Свидетельство о браке бабушки с дедушкой</label></div>
-                                <div class="checkbox-group"><input type="checkbox" id="d10" name="docs[]" value="Документы детей"><label for="d10">Документы на детей (Св-ва о рождении)</label></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 6. Пакет услуг -->
-                    <div class="form-section">
-                        <h3>6. Пакет услуг</h3>
+                        <h3>2. Пакет услуг</h3>
                         <div class="input-group">
                             <label>Какой пакет услуг вас интересует? *</label>
                             <select name="selected_package" required>
@@ -407,9 +274,9 @@
                         </div>
                     </div>
 
-                    <!-- 7. Загрузка файлов -->
+                    <!-- 3. Загрузка файлов -->
                     <div class="form-section">
-                        <h3>7. Прикрепление файлов</h3>
+                        <h3>3. Прикрепление файлов</h3>
                         <p style="font-size: 0.9rem; margin-bottom: 15px; color: #666;">Прикрепите сканы или качественные фото имеющихся документов. Мы гарантируем полную конфиденциальность.</p>
                         
                         <div class="file-upload-area" onclick="document.getElementById('file-input').click()">
@@ -488,35 +355,12 @@
                 
                 const fd = new FormData(form);
                 
-                // Сбор чекбоксов
-                const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
-                const docsList = Array.from(checkboxes).map(cb => '✅ ' + cb.value).join('\n') || '❌ Нет документов';
-
                 // Формирование текста
-                let text = `📋 <b>СЕМЕЙНОЕ ДРЕВО (Анкета)</b>\n\n`;
+                let text = `📋 <b>БЫСТРАЯ АНКЕТА НА ГРАЖДАНСТВО</b>\n\n`;
                 text += `👤 <b>ЗАЯВИТЕЛЬ:</b> ${fd.get('applicant_fio')}\n`;
-                text += `Телефон: ${fd.get('phone')}\n`;
-                text += `Д.Р.: ${fd.get('applicant_birth_date')} | Место: ${fd.get('applicant_birth_place')}\n`;
-                text += `Гражданство: ${fd.get('applicant_citizenship')}\n\n`;
-
-                text += `👨‍👩‍👦 <b>РОДИТЕЛИ:</b>\n`;
-                text += `Отец: ${fd.get('father_fio')} (${fd.get('father_birth_date')}, ${fd.get('father_birth_place')})\n`;
-                text += `Мать: ${fd.get('mother_fio')} (${fd.get('mother_birth_date')}, ${fd.get('mother_birth_place')})\n\n`;
-
-                text += `👴👵 <b>ДЕДУШКИ / БАБУШКИ (По отцу):</b>\n`;
-                text += `Дед: ${fd.get('gf_father_fio')} (${fd.get('gf_father_birth')})\n`;
-                text += `Баб: ${fd.get('gm_father_fio')} (${fd.get('gm_father_birth')})\n\n`;
-
-                text += `👴👵 <b>ДЕДУШКИ / БАБУШКИ (По маме):</b>\n`;
-                text += `Дед: ${fd.get('gf_mother_fio')} (${fd.get('gf_mother_birth')})\n`;
-                text += `Баб: ${fd.get('gm_mother_fio')} (${fd.get('gm_mother_birth')})\n\n`;
-
-                if(fd.get('great_grandparents_info')) {
-                    text += `📜 <b>ПРАДЕДУШКИ / ПРАБАБУШКИ:</b>\n${fd.get('great_grandparents_info')}\n\n`;
-                }
-
-                text += `📁 <b>НАЛИЧИЕ ДОКУМЕНТОВ:</b>\n${docsList}\n\n`;
-                text += `💼 <b>ПАКЕТ УСЛУГ:</b>\n${fd.get('selected_package')}\n`;
+                text += `Телефон: ${fd.get('phone')}\n\n`;
+                text += `📜 <b>ИЗВЕСТНО О КОРНЯХ:</b>\n${fd.get('great_grandparents_info')}\n\n`;
+                text += `💼 <b>ПАКЕТ УСЛУГ:</b>\n${fd.get('selected_package')}\n\n`;
 
                 try {
                     // Отправка текстовых данных
