@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroStatus | О Компании</title>
+    <!-- Подключаем основной CSS файл -->
+      <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=2">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+  <link rel="stylesheet" crossorigin href="/assets/anketa-BFJh6dym.css">
+</head>
+<body>
+  <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О компании</a></li>
+            <li class="has-dropdown">
+          <a href="#services" class="active">Услуги <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/citizenship-eu" class="active">Гражданство ЕС</a></li>
+            <li><a href="/residency">ВНЖ и ПМЖ в Европе</a></li>
+            <li><a href="/investment">Второе гражданство за инвестиции</a></li>
+            <li><a href="/visas">Визы и иммиграция</a></li>
+          </ul>
+        </li>
+        <li><a href="/reviews">Отзывы</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/40793707526" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+          <div class="lang-switch">
+             <a href="/" class="active">RU</a><span class="divider">|</span><a href="/en">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Индивидуальная консультация'); return false;" class="btn-primary">Консультация</a>
+        </div>
+      </div>
+    </header>
+
+  <main>
+    <!-- 1. HERO BLOCK -->
+    <section class="faq-hero" style="background: url('/assets/images/hero_citizenship.png') center/cover no-repeat; position: relative; padding: 180px 0 160px;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(180deg, rgba(11,32,70,0.9) 0%, rgba(11,32,70,0.7) 100%); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+          
+          <div class="fade-in-up" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px;">
+            <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+            <span style="color: var(--gold-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">Официально и легально</span>
+            <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+          </div>
+          
+          <h1 class="fade-in-up delay-1" style="color: #fff; font-size: 4.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 25px; line-height: 1.1; font-family: 'Times New Roman', serif;">Гражданство Евросоюза</h1>
+          
+          <p class="fade-in-up delay-2" style="color: rgba(255,255,255,0.85); font-size: 1.25rem; line-height: 1.6; max-width: 800px; margin: 0 auto 40px;">Второе гражданство Румынии, Болгарии, Словении, Чехии, Греции и Польши для инвесторов и их семей. Свобода передвижения по 170+ странам мира, легальная жизнь, работа и бизнес в Европе (ЕС).</p>
+          
+        </div>
+    </section>
+
+    <!-- 2. AVAILABLE PROGRAMS -->
+    <section id="programs" class="section-padding" style="background: var(--bg-light); position: relative;">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Список услуг и цен</h2>
+                <p>Прозрачные условия и полное юридическое сопровождение от EuroStatus.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Romania -->
+                <div class="program-tier-card">
+                    <img src="/assets/images/bg_romania_new.png" alt="Гражданство Румынии">
+                    <div class="program-tier-content">
+                        <h3>Румыния</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €6 500</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 12 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Первичная консультация, анализ имеющихся документов</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Архивные исследования для поиска "румынских корней"</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка досье, перевод справок и свидетельств на румынский язык</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подача документов в Министерство юстиции (г. Бухарест)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Выход в приказ, сдача присяги и получение сертификата</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Оформление внутренних румынских документов</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Румынии')">Узнать больше</button>
+                    </div>
+                </div>
+
+                <!-- Bulgaria -->
+                <div class="program-tier-card">
+                    <img src="/assets/images/bg_bulgaria_new.png" alt="Гражданство Болгарии">
+                    <div class="program-tier-content">
+                        <h3>Болгария</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €7 000</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 12 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Анализ существующих документов, оценка шансов на получение</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Изготовление документа, подтверждающего болгарское происхождение</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Личная подача досье в Министерство правосудия (г. София)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка к интервью, успешное прохождение собеседования</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Выход Указа о присвоении гражданства</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Оформление внутренних документов резидента Болгарии</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Болгарии')">Узнать больше</button>
+                    </div>
+                </div>
+
+                <!-- Poland -->
+                <div class="program-tier-card">
+                    <img src="/assets/images/bg_poland_new.png" alt="Гражданство Польши">
+                    <div class="program-tier-content">
+                        <h3>Польша</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €9 000</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 12 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Предварительная бесплатная консультация со специалистом</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Поиск документального подтверждения польского происхождения</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Составление досье, его перевод и запись на подачу в консульство</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка к интервью с консулом</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подача документов и собеседование в консульстве</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Получение карты поляка</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Польши')">Узнать больше</button>
+                    </div>
+                </div>
+
+                <!-- Slovenia -->
+                <div class="program-tier-card">
+                    <img src="/assets/images/bg_slovenia.png" alt="Гражданство Словении">
+                    <div class="program-tier-content">
+                        <h3>Словения</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €10 500</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 12 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Предварительная консультация и оценка шансов</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка документов, подтверждающих корни</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подача документов в компетентные органы</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Сопровождение на всех этапах рассмотрения дела</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Сдача присяги и получение сертификата</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Оформление словенского паспорта</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Словении')">Узнать больше</button>
+                    </div>
+                </div>
+
+                <!-- Germany -->
+                <div class="program-tier-card">
+                    <img src="/assets/bg_germany-Br90yrEH.png" alt="Гражданство Германии">
+                    <div class="program-tier-content">
+                        <h3>Германия</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €10 000</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 7 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Юридический аудит и построение родовой линии</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Истребование выписок из архивов (национальность)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка досье по программе Поздних переселенцев (BVFG)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Легализация и отправка дела в ведомство BVA (г. Кёльн)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Получение решения о приеме (Aufnahmebescheid)</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Оформление немецкого паспорта для всей семьи</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Германии')">Узнать больше</button>
+                    </div>
+                </div>
+
+                <!-- Greece -->
+                <div class="program-tier-card">
+                    <img src="/assets/images/bg_greece.png" alt="Гражданство Греции">
+                    <div class="program-tier-content">
+                        <h3>Греция</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+                            <span style="font-size: 1.3rem; color: var(--gold-main); font-weight: bold;">от €11 500</span>
+                            <span style="font-size: 0.9rem; background: rgba(11,32,70,0.05); padding: 5px 10px; border-radius: 4px;">От 5 до 12 месяцев</span>
+                        </div>
+                        <div class="program-tier-specs" style="align-items: flex-start; text-align: left; gap: 12px;">
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Глубокий анализ документов аудиторами</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Истребование свидетельств из греческих архивов</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подготовка досье по стандартам МВД Греции</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Подача заявления через консульство</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Одобрение заявления и получение статуса</span>
+                            <span><svg style="min-width:18px; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Оформление паспорта Греции</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 15px;" onclick="openServiceModal('Гражданство Греции')">Узнать больше</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. DEEP DIVE BENEFITS (6 GRID) -->
+    <section class="services section-padding" style="background: var(--bg-light)">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Преимущества паспорта ЕС</h2>
+          <p>Какие горизонты открывает второе гражданство для вас и вашей семьи</p>
+        </div>
+        <div class="premium-benefits-grid">
+          <!-- 1 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <h3>Полные права гражданина</h3>
+            <p>Возможность пользоваться всеми преимуществами и правами, которые доступны гражданам Евросоюза.</p>
+          </div>
+          <!-- 2 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg></div>
+            <h3>Европейское образование</h3>
+            <p>Право на льготное или бесплатное образование и повышение квалификации в престижных ВУЗах Европы.</p>
+          </div>
+          <!-- 3 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+            <h3>Официальное трудоустройство</h3>
+            <p>Право на трудоустройство в любом государстве объединения и получение зарплаты наравне с гражданами ЕС.</p>
+          </div>
+          <!-- 4 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
+            <h3>Европейская недвижимость</h3>
+            <p>Возможность приобретать недвижимость в любой стране Евросоюза по доступным ценам с минимальным налогом.</p>
+          </div>
+          <!-- 5 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+            <h3>Свобода перемещения</h3>
+            <p>Возможность в любое время пересекать границы более чем 160 стран мира в безвизовом режиме.</p>
+          </div>
+          <!-- 6 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+            <h3>Надежный банкинг</h3>
+            <p>Право пользоваться банковскими программами, открывать счета и оформлять кредиты на выгодных условиях.</p>
+          </div>
+          <!-- 7 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+            <h3>Премиальная медицина</h3>
+            <p>Возможность пользоваться высококачественными медицинскими услугами в лучших европейских клиниках.</p>
+          </div>
+          <!-- 8 -->
+          <div class="premium-benefit-card">
+            <div class="premium-benefit-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+            <h3>Социальная защита</h3>
+            <p>Возможность жить в стране с высокими социальными стандартами и при этом находиться под ее правовой защитой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHO IS IT FOR? -->
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Плюсы оформления гражданства ЕС с EuroStatus</h2>
+                <p>Надежное юридическое сопровождение от первой консультации до получения паспорта.</p>
+            </div>
+            
+            <div class="premium-benefits-grid" style="margin-top: 50px;">
+                <!-- 1 -->
+                <div class="image-benefit-card">
+                    <img src="/assets/images/benefit_security.png" alt="100% Защита данных">
+                    <div class="content">
+                        <h3>100% Защита данных</h3>
+                        <p>Ваши личные данные защищены на 100% договором о сотрудничестве с EuroStatus. Мы гарантируем безопасность, конфиденциальность и положительный результат.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="image-benefit-card">
+                    <img src="/assets/images/benefit_finance.png" alt="Выгодные условия">
+                    <div class="content">
+                        <h3>Выгодные условия</h3>
+                        <p>Сотрудничество с EuroStatus предполагает выгодные условия для вас и ваших близких. Вы оплачиваете стоимость услуг наших юристов только после успешной подачи документов.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="image-benefit-card">
+                    <img src="/assets/images/benefit_europe.png" alt="Офисы по всей Европе">
+                    <div class="content">
+                        <h3>Офисы по всей Европе</h3>
+                        <p>Представительства компании EuroStatus в 8-ми городах Европы и СНГ успешно работают и обслуживают клиентов уже более 10 лет.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="image-benefit-card">
+                    <img src="/assets/images/benefit_legal.png" alt="Исключительно легально">
+                    <div class="content">
+                        <h3>Исключительно легально</h3>
+                        <p>Компания EuroStatus работает исключительно с государственными иммиграционными программами ЕС и предоставляет услуги строго по нормам закона.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TIMELINE / PROCESS -->
+    <section class="section-padding" style="background: var(--bg-light)">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Этапы оформления</h2>
+                <p>Прозрачный и понятный процесс получения гражданства ЕС с EuroStatus.</p>
+            </div>
+            
+            <div class="process-timeline-v2">
+                <div class="pt-v2-step">
+                    <div class="pt-v2-marker">1</div>
+                    <div class="pt-v2-content">
+                        <h3>Первичная консультация сотрудника компании</h3>
+                        <p>Миграционный специалист компании EuroStatus подробно расскажет обо всех процедурах получения гражданства ЕС, ответит на интересующие вас вопросы и поможет выбрать программу, соответствующую вашим пожеланиям.</p>
+                    </div>
+                </div>
+                <div class="pt-v2-step">
+                    <div class="pt-v2-marker">2</div>
+                    <div class="pt-v2-content">
+                        <h3>Подготовка досье</h3>
+                        <p>Уполномоченный юрист компании соберет все необходимые документы, при необходимости истребует дубликаты недостающих свидетельств, переведет их и легализирует, а также оформит в досье согласно всем законодательным нормам ЕС.</p>
+                    </div>
+                </div>
+                <div class="pt-v2-step">
+                    <div class="pt-v2-marker">3</div>
+                    <div class="pt-v2-content">
+                        <h3>Подача документов</h3>
+                        <p>В назначенный день вам в сопровождении юриста EuroStatus нужно будет отправиться в государственное учреждение ЕС и лично подать свое досье. Специалисты компании предварительно проконсультируют вас по всем особенностям процедуры.</p>
+                    </div>
+                </div>
+                <div class="pt-v2-step">
+                    <div class="pt-v2-marker">4</div>
+                    <div class="pt-v2-content">
+                        <h3>Получение сертификата о гражданстве</h3>
+                        <p>После положительного решения представителей госслужбы вам присвоят статус гражданина Евросоюза и выдадут соответствующий сертификат. Далее юристы компании помогут вам оформить внутренние документы ЕС.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. COMPARISON TABLE -->
+    <section class="section-padding" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Гражданство или ВНЖ?</h2>
+                <p>Единственный статус, дающий вам абсолютные гарантии на ближайшие поколения.</p>
+            </div>
+            
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 35%;">Права и привилегии</th>
+                            <th style="width: 30%;">ВНЖ Европейской страны</th>
+                            <th style="width: 35%;">Паспорт ЕС</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Круглогодичное проживание в ЕС</td>
+                            <td><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="color:#d32f2f; opacity: 0.5;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></td>
+                            <td><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="color:var(--gold-main)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        </tr>
+                        <tr>
+                            <td>Безвизовый въезд (США, Британия)</td>
+                            <td><span class="badge-restrict">Только Шенген</span></td>
+                            <td><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="color:var(--gold-main)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        </tr>
+                        <tr>
+                            <td>Трудоустройство без Work Permit</td>
+                            <td><span class="badge-restrict">Строго в стране ВНЖ</span></td>
+                            <td><span class="badge-allow">Любая из 27 стран</span></td>
+                        </tr>
+                        <tr>
+                            <td>Продление статуса</td>
+                            <td><span class="badge-restrict">Каждые 1-3 года + экзамены</span></td>
+                            <td><span class="badge-allow">Пожизненно</span></td>
+                        </tr>
+                        <tr>
+                            <td>Защита от аннуляции</td>
+                            <td><span class="badge-restrict">Высокий риск потери</span></td>
+                            <td><span class="badge-allow"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:text-bottom; margin-right:4px;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg> Защищено Конституцией</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ ACCORDION -->
+    <section class="section-padding" style="background: var(--bg-light)">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>FAQ: Вопросы и ответы</h2>
+                <p>Юридическая прозрачность на каждом этапе.</p>
+            </div>
+            
+            <div class="faq-accordion" style="max-width: 800px; margin: 0 auto; background: var(--bg-light); padding: 20px 40px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                <div class="faq-item">
+                    <button class="faq-question">Зачем оформлять гражданство ЕС?</button>
+                    <div class="faq-answer">
+                        <div>Гражданство Европейского союза предоставляет ряд преимуществ: безвизовое перемещение по странам мира, легальное трудоустройство, качественное медобслуживание и образование, социальная защита, возможность открыть счет в надежном европейском банке, а также зарегистрировать международный бизнес на привлекательных условиях.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">У меня нет корней. Как получить паспорт?</button>
+                    <div class="faq-answer">
+                        <div>Восстановление гражданства по корням или репатриация на сегодняшний день является наиболее быстрым, надежным и наименее затратным вариантом иммиграции. Если вы сомневаетесь в наличии у вас оснований на репатриацию, обратитесь к специалистам EuroStatus. Юристы компании помогут восстановить недостающие свидетельства благодаря постоянному и успешному сотрудничеству с государственными архивами.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Могут ли мне отказать в получении гражданства?</button>
+                    <div class="faq-answer">
+                        <div>Процедура оформления гражданства Европейского союза строго регламентирована и полностью прозрачна. Отказа на получение статуса не последует в случае, если заявитель не нарушал визовый режим, не имел проблем с законом, не был депортирован и предоставляет справку о несудимости.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            document.querySelectorAll('.faq-question').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqItem = button.parentElement;
+                    const isActive = faqItem.classList.contains('active');
+                    
+                    document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+                    if (!isActive) faqItem.classList.add('active');
+                });
+            });
+        </script>
+    </section>
+
+    <!-- 8. FINAL CTA FORM -->
+    <section class="cta-form-section" id="consultation">
+        <div class="container">
+            <div class="cta-form-wrapper">
+                <div class="cta-text">
+                    <h2>Узнайте свои шансы на гражданство ЕС</h2>
+                    <p>Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+                </div>
+                <form class="lead-form" action="#" method="POST">
+    <input placeholder="Ваше имя" name="name" required="" type="text"/>
+    <input placeholder="Номер телефона" name="phone" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-1">
+        <input type="hidden" name="service_type" id="hidden_service_type_1" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-1').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-1" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-1">
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('hidden_service_type_1','selected-service-text-1','unif-dropdown-menu-1','unif-dropdown-1', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+    <button class="btn-primary" style="width: 100%; margin-top: 5px;" type="submit">Оставить заявку</button>
+    <div style="font-size: 0.75rem; text-align: center; color: rgba(255,255,255,0.4); margin-top: 15px; line-height: 1.4;">Нажимая кнопку, вы даете согласие на обработку персональных данных.</div>
+</form>
+            </div>
+        </div>
+    </section>
+</main>
+
+  <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+            <p class="footer-mission">Официальное и полностью легальное оформление гражданства Евросоюза. Работаем строго по договору.</p>
+            <p class="reg-number" style="opacity: 0.7; margin-top: 10px;">A.S. CONSULTING COMPANY S.R.L.<br>CUI (Код Регистрации): 17839407</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/reviews">Отзывы клиентов</a></li>
+              <li><a href="/faq">Вопросы (FAQ)</a></li>
+              <li><a href="/contact">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Наши Услуги</h4>
+            <ul>
+              <li><a href="#">Гражданство ЕС</a></li>
+              <li><a href="#">Гражданство США</a></li>
+              <li><a href="#">Гражданство Израиля</a></li>
+              <li><a href="#">Гражданство Азии</a></li>
+              <li><a href="#">ВНЖ / ПМЖ</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list premium-icons">
+              <li title="Главный операционный офис"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Румыния: Victoria Business Center, Бухарест</li>
+              <li title="Представительство"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Болгария: Crystal Business Center, София</li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> <a href="mailto:eurostatus@ro.ru">eurostatus@ro.ru</a> <span style="font-size: 0.85em; opacity: 0.8;">(Для документов)</span></li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> Пн-Пт: 10:00 - 19:00</li>
+              <li class="footer-socials" style="display: flex; gap: 15px; margin-top: 25px;">
+<a href="https://wa.me/40793707526" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. Все права защищены.</p>
+          <div class="legal-links">
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/terms">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="/assets/js/main.js?v=tg2"></script>
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>

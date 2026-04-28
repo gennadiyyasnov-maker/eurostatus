@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script>
+    if (document.cookie.includes('googtrans=/ru/en')) {
+        document.documentElement.style.visibility = 'hidden';
+    }
+</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroStatus | Оформление гражданства ЕС</title>
+    <!-- Подключаем основной CSS файл -->
+      <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=2">
+<style id="guaranteed-mobile-fix">
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .hero-content {
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+    .hero-bullets {
+        justify-content: center !important;
+    }
+    .hero-form-wrapper {
+        position: static !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        display: block !important;
+        transform: none !important;
+    }
+    .deco-passport {
+        display: none !important;
+    }
+    .mobile-toggle { display: block !important; }
+}
+</style>
+  <script type="module" crossorigin src="/assets/main-Cz3aCdQw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/anketa-BFJh6dym.css">
+</head>
+  <body>
+    <!-- Unified Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Меню" style="display: none !important;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О компании</a></li>
+            <li class="has-dropdown">
+          <a href="#services">Услуги <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/citizenship-eu">Гражданство ЕС</a></li>
+            <li><a href="/residency">ВНЖ и ПМЖ в Европе</a></li>
+            <li><a href="/investment">Второе гражданство за инвестиции</a></li>
+            <li><a href="/visas">Визы и иммиграция</a></li>
+          </ul>
+        </li>
+        <li><a href="/reviews">Отзывы</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/40793707526" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          <a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+          <div class="lang-switch">
+             <a href="/" class="active">RU</a><span class="divider">|</span><a href="/en">EN</a>
+          </div>
+          <a href="#" onclick="openServiceModal('Индивидуальная консультация'); return false;" class="btn-primary">Консультация</a>
+        </div>
+      </div>
+    </header>
+
+    
+    <main>
+
+      <section class="faq-hero" style="background: url('/assets/images/hero_bg_light.png') center/cover no-repeat; position: relative; padding: 120px 0 80px;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(90deg, #0B2046 0%, rgba(11, 32, 70, 0.85) 50%, rgba(11, 32, 70, 0.4) 100%); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+          <div style="max-width: 650px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <div style="width: 40px; height: 1px; background: var(--gold-main);"></div>
+              <span style="color: var(--gold-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 600;">Юридический отдел</span>
+            </div>
+            <h1 style="color: #fff; font-size: 4.5rem; text-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 25px; line-height: 1.1; font-family: 'Times New Roman', serif;">Возврат средств</h1>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.25rem; line-height: 1.6; border-left: 2px solid rgba(212,175,55,0.3); padding-left: 20px;">Официальная форма для расторжения договора и инициации возврата авансового платежа согласно регламенту.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" style="padding: 90px 0; position: relative; z-index: 10; background: #f0f2f5;">
+        <div class="container">
+          <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.8fr; gap: 50px; align-items: start;">
+            
+            <!-- Sidebar info - Premium dark card -->
+            <div style="background: linear-gradient(145deg, #0B2046 0%, #153268 100%); border-radius: 16px; padding: 40px; position: sticky; top: 120px; box-shadow: 0 20px 40px rgba(11, 32, 70, 0.15); overflow: hidden;">
+              <!-- Decorative element -->
+              <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+              
+              <h2 style="color: #fff; font-size: 2rem; margin-bottom: 25px; font-family: 'Times New Roman', serif; position: relative; z-index: 2;">Департамент контроля качества</h2>
+              <p style="color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 30px; font-size: 1.05rem; position: relative; z-index: 2;">Заполните заявление на расторжение договора. Каждый запрос проходит персональный аудит старшим юристом.</p>
+              
+              <div style="background: rgba(255,255,255,0.05); border-left: 3px solid var(--gold-main); padding: 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; position: relative; z-index: 2;">
+                 <h4 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem;">Финансовый регламент</h4>
+                 <ul style="color: rgba(255,255,255,0.7); line-height: 1.6; list-style-type: none; padding: 0; margin: 0; font-size: 0.95rem;">
+                   <li style="margin-bottom: 8px; display: flex; align-items: center; gap: 8px;"><div style="width:5px;height:5px;background:var(--gold-main);border-radius:50%;"></div> Аудит расходов</li>
+                   <li style="margin-bottom: 8px; display: flex; align-items: center; gap: 8px;"><div style="width:5px;height:5px;background:var(--gold-main);border-radius:50%;"></div> Перевод остатка (до 5 дней)</li>
+                   <li style="display: flex; align-items: center; gap: 8px;"><div style="width:5px;height:5px;background:var(--gold-main);border-radius:50%;"></div> Официальное закрытие контракта</li>
+                 </ul>
+              </div>
+              
+              <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; position: relative; z-index: 2;">Официальный email поддержки:<br><a href="mailto:legal@eurostatus.com" style="color: var(--gold-main); text-decoration: none; font-size: 1rem; display: block; margin-top: 5px;">legal@eurostatus.com</a></p>
+            </div>
+
+            <!-- Complex Legal Form -->
+            <div style="position: relative; z-index: 20;">
+              
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+              <style>
+                 .iti { width: 100%; display: block; }
+                 .input-error { border-color: #e53e3e !important; background: #fff5f5 !important; box-shadow: 0 0 0 3px rgba(229,62,62,0.1) !important; }
+                 .error-msg { color: #e53e3e; font-size: 0.85rem; margin-top: 5px; display: none; font-weight: 500; }
+                 
+                 /* Extremely visible luxury inputs */
+                 .custom-input { color: #1A202C !important; width: 100%; padding: 16px; border: 1px solid #94a3b8 !important; border-radius: 8px; background: #f8fafc !important; font-family: inherit; font-size: 1rem; transition: all 0.3s; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05) !important; }
+                 .custom-input::placeholder { color: #8292a8; }
+                 .custom-input:focus { outline: none; border-color: var(--gold-main) !important; box-shadow: 0 0 0 4px rgba(212,175,55,0.2) !important; background: #ffffff !important; }
+                 
+                 /* Prevent Yellow autofill in Chrome/Safari */
+                 .custom-input:-webkit-autofill, .custom-input:-webkit-autofill:hover, .custom-input:-webkit-autofill:focus, .custom-input:-webkit-autofill:active{
+                     -webkit-box-shadow: 0 0 0 30px white inset !important;
+                     box-shadow: 0 0 0 30px white inset !important;
+                     -webkit-text-fill-color: #1A202C !important;
+                 }
+                 
+                 /* Styling selects to match premium feel */
+                 select.custom-input { appearance: none; background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231A202C%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); background-repeat: no-repeat; background-position: right 1rem top 50%; background-size: 0.65rem auto; cursor: pointer; }
+                 
+                 /* Sub-card styling: Pure white boxes sitting on a grey page background */
+                 .form-step-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 40px; margin-bottom: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+                 .form-step-card:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.04); border-color: rgba(212,175,55,0.3); }
+                 .form-step-indicator { background: rgba(212,175,55,0.1); color: var(--gold-main); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-family: sans-serif; font-weight: bold; flex-shrink: 0; }
+                 .form-section-title { color: #0B2046; font-family: 'Times New Roman', serif; font-size: 1.5rem; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; margin-top: 0; }
+                 
+                 .form-label { display: block; font-weight: 500; color: #4A5568; margin-bottom: 10px; font-size: 0.95rem; }
+                 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+                 @media (max-width: 768px) { .form-grid { grid-template-columns: 1fr; } }
+                 
+                 .file-upload-block { border: 2px dashed rgba(212,175,55,0.3); padding: 25px; text-align: center; border-radius: 8px; background: rgba(212,175,55,0.02); transition: all 0.3s; cursor: pointer; }
+                 .file-upload-block:hover { border-color: var(--gold-main); background: rgba(212,175,55,0.05); }
+              </style>
+
+              <form id="refund-form" novalidate>
+                
+                <!-- 1. Personal Data -->
+                <div class="form-step-card">
+                   <div style="position: absolute; top:0; left:0; width: 4px; height: 100%; background: var(--gold-main);"></div>
+                   <h3 class="form-section-title">
+                      <span class="form-step-indicator">1</span>
+                      Персональные данные
+                   </h3>
+                   <div class="form-grid">
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label">ФИО заявителя (строго по договору)</label>
+                       <input type="text" id="FullName" class="custom-input" placeholder="Иванов Иван Иванович" required minlength="5" pattern="^[a-zA-Zа-яА-ЯёЁ\s-]+$" />
+                       <div class="error-msg" id="err-FullName">Пожалуйста, введите корректные ФИО.</div>
+                     </div>
+                     <div>
+                       <label class="form-label">Мобильный телефон (Telegram / WhatsApp)</label>
+                       <input type="tel" id="Phone" class="custom-input" required />
+                       <div class="error-msg" id="err-Phone">Некорректный номер телефона.</div>
+                     </div>
+                     <div>
+                       <label class="form-label">Email для получения решения</label>
+                       <input type="email" id="Email" class="custom-input" placeholder="ivan@example.com" required />
+                       <div class="error-msg" id="err-Email">Введите корректный email.</div>
+                     </div>
+                   </div>
+                </div>
+
+                <!-- 2. Contract Data -->
+                <div class="form-step-card">
+                   <div style="position: absolute; top:0; left:0; width: 4px; height: 100%; background: #0B2046;"></div>
+                   <h3 class="form-section-title">
+                      <span class="form-step-indicator" style="background: rgba(11, 32, 70, 0.1); color: #0B2046;">2</span>
+                      Идентификация контракта
+                   </h3>
+                   <div class="form-grid">
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label">Программа оформления (Тип услуги)</label>
+                       <select id="ServiceType" class="custom-input" required>
+                         <option value="" disabled selected>Выберите юридическую услугу...</option>
+                         <option value="eu">Гражданство Евросоюза (Румыния / Болгария)</option>
+                         <option value="usa">Оформление визы / Гражданство США</option>
+                         <option value="il">Гражданство Израиля (Репатриация)</option>
+                         <option value="vnz">Оформление ВНЖ / ПМЖ</option>
+                         <option value="invest">Инвестиционные программы</option>
+                       </select>
+                       <div class="error-msg" id="err-ServiceType">Обязательно выберите тип услуги.</div>
+                     </div>
+                     <div>
+                       <label class="form-label">Уникальный номер договора</label>
+                       <input type="text" id="Contract" class="custom-input" placeholder="Напр. ES-2026-X839" required minlength="4" />
+                       <div class="error-msg" id="err-Contract">Строго укажите нормер из шапки договора.</div>
+                     </div>
+                     <div>
+                       <label class="form-label">Дата подписания</label>
+                       <input type="date" id="ContractDate" class="custom-input" required />
+                       <div class="error-msg" id="err-ContractDate">Укажите дату.</div>
+                     </div>
+                   </div>
+                </div>
+
+                <!-- 3. Legal Grounds -->
+                <div class="form-step-card">
+                   <div style="position: absolute; top:0; left:0; width: 4px; height: 100%; background: #0B2046;"></div>
+                   <h3 class="form-section-title">
+                      <span class="form-step-indicator" style="background: rgba(11, 32, 70, 0.1); color: #0B2046;">3</span>
+                      Юридические основания
+                   </h3>
+                   <div class="form-grid">
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label">Официальная причина расторжения</label>
+                       <select id="ReasonSelect" class="custom-input" required>
+                         <option value="" disabled selected>Укажите причину для передачи в юротдел...</option>
+                         <option value="personal">Внутренние / Семейные обстоятельства (Передумал)</option>
+                         <option value="delay">Систематическое нарушение заявленных сроков</option>
+                         <option value="quality">Претензии к качеству работы / Невыполнение этапа</option>
+                         <option value="other">Иное (укажу в деталях)</option>
+                       </select>
+                       <div class="error-msg" id="err-ReasonSelect">Выбор основания обязателен.</div>
+                     </div>
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label">Развернутая претензия (Детали)</label>
+                       <textarea id="Details" class="custom-input" placeholder="Пожалуйста, опишите ситуацию с вашей стороны: что именно не было сделано, почему принято решение о расторжении..." rows="4" required minlength="20" style="resize: vertical;"></textarea>
+                       <div class="error-msg" id="err-Details">Подробное описание причин (мин. 20 символов) обязательно для старта аудита.</div>
+                     </div>
+                   </div>
+                </div>
+
+                <!-- 4. Financials -->
+                <div class="form-step-card" style="margin-bottom: 40px;">
+                   <div style="position: absolute; top:0; left:0; width: 4px; height: 100%; background: #0B2046;"></div>
+                   <h3 class="form-section-title">
+                      <span class="form-step-indicator" style="background: rgba(11, 32, 70, 0.1); color: #0B2046;">4</span>
+                      Документы и Возврат
+                   </h3>
+                   <div class="form-grid">
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label">Авансовая сумма и Полный IBAN банка для возврата</label>
+                       <textarea id="IBAN" class="custom-input" placeholder="Сумма к возврату согласно аудиту: XXX EUR.&#10;Номер банковского счета (IBAN): &#10;Название вашего банка / SWIFT:" rows="3" required minlength="15"></textarea>
+                       <div class="error-msg" id="err-IBAN">Убедитесь, что реквизиты указаны в международном формате.</div>
+                     </div>
+                     <div style="grid-column: 1 / -1;">
+                       <label class="form-label" style="margin-top: 10px;">Копия договора или квитанции об оплате (По желанию ускоряет процесс)</label>
+                       <div class="file-upload-block">
+                         <svg style="width: 32px; height: 32px; color: var(--gold-main); margin-bottom: 10px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                         <p style="color: #4A5568; margin-bottom: 10px; font-weight: 500;">Нажмите здесь или перетащите файлы</p>
+                         <input type="file" id="FileAttach" accept=".pdf, .jpg, .png, .jpeg" style="width: 100%; color: #718096; font-size: 0.9rem;" />
+                       </div>
+                     </div>
+                   </div>
+                </div>
+                
+                <div>
+                   <button type="submit" id="submitBtn" class="btn-primary glow-btn" style="width: 100%; padding: 22px; font-size: 1.15rem; border-radius: 8px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 20px rgba(212,175,55,0.3);">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                      Подать официальное заявление
+                   </button>
+                   <p style="font-size: 0.85rem; color: #718096; text-align: center; margin-top: 20px;">Нажимая кнопку, вы подтверждаете достоверность введенных данных и соглашаетесь с условиями расторжения контракта согласно директиве EuroStatus.</p>
+                </div>
+              </form>
+              
+              <!-- Success Message -->
+              <div id="refund-success" style="display: none; text-align: center; padding: 60px 20px; background: #fff; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05);">
+                <div style="width: 80px; height: 80px; background: rgba(212,175,55,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px;">
+                  <svg style="color: var(--gold-main); width: 40px; height: 40px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h3 style="color: #0B2046; margin-bottom: 20px; font-size: 2.2rem; font-family: 'Times New Roman', serif;">Заявление Зарегистрировано</h3>
+                <div style="display: inline-block; background: #fdfdfd; border: 1px solid rgba(0,0,0,0.1); padding: 10px 20px; border-radius: 6px; margin-bottom: 25px; font-family: monospace; font-size: 1.2rem; color: #1A202C;">ТРЕК-НОМЕР: D-492-EU</div>
+                <p style="color: #4A5568; line-height: 1.8; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Ваш запрос успешно поступил в электронную систему юридического департамента EuroStatus.<br><br>Старший юрист проведет аудит вашего дела и свяжется с вами по указанным телефону / email в течение <b>1-2 рабочих дней</b> для сверки банковских реквизитов и подтверждения финального перевода.</p>
+              </div>
+
+              <!-- validation and phone scripts -->
+              <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const input = document.querySelector("#Phone");
+                  const iti = window.intlTelInput(input, {
+                    initialCountry: "ru",
+                    preferredCountries: ["ru", "by", "kz", "uz", "ua", "il", "de"],
+                    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+                  });
+
+                  const form = document.getElementById('refund-form');
+                  
+                  form.addEventListener('submit', function(e) {
+                     e.preventDefault();
+                     let isValid = true;
+
+                     // Reset errors
+                     document.querySelectorAll('.custom-input').forEach(el => el.classList.remove('input-error'));
+                     document.querySelectorAll('.error-msg').forEach(el => el.style.display = 'none');
+
+                     // Basic validation check
+                     const fields = ['FullName', 'Contract', 'ContractDate', 'ServiceType', 'ReasonSelect', 'Details', 'IBAN', 'Email'];
+                     fields.forEach(id => {
+                        const el = document.getElementById(id);
+                        if(!el.checkValidity() || (el.tagName !== 'SELECT' && el.value.trim() === '')) {
+                           el.classList.add('input-error');
+                           document.getElementById('err-' + id).style.display = 'block';
+                           isValid = false;
+                        }
+                     });
+
+                     // Phone validation via plugin
+                     if(!iti.isValidNumber()) {
+                        input.classList.add('input-error');
+                        document.getElementById('err-Phone').style.display = 'block';
+                        isValid = false;
+                     }
+
+                     if(isValid) {
+                        const btn = document.getElementById('submitBtn');
+                        btn.innerHTML = '<span style="opacity: 0.7;">Отправка в закрытый контур...</span>';
+                        
+                        setTimeout(() => {
+                           form.style.display = 'none';
+                           document.getElementById('refund-success').style.display = 'block';
+                           window.scrollTo({ top: document.querySelector('.faq-section').offsetTop - 50, behavior: 'smooth' });
+                        }, 1200);
+                     } else {
+                        // Scroll to first error
+                        const firstError = document.querySelector('.input-error');
+                        if (firstError) {
+                            window.scrollTo({ top: firstError.getBoundingClientRect().top + window.scrollY - 150, behavior: 'smooth' });
+                        }
+                     }
+                  });
+
+                  // Clear error on input
+                  document.querySelectorAll('.custom-input').forEach(el => {
+                     el.addEventListener('input', function() {
+                        this.classList.remove('input-error');
+                        let errEl = document.getElementById('err-' + this.id);
+                        if(errEl) errEl.style.display = 'none';
+                     });
+                  });
+                });
+              </script>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <!-- Main Footer -->
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <a href="/" class="logo">
+          <img src="/assets/images/logo_light.png" alt="EuroStatus Icon" class="logo-icon">
+          <div class="logo-text-wrapper">
+            <div class="logo-brand">
+              <span class="logo-euro">EURO</span>
+              <span class="logo-status">STATUS</span>
+            </div>
+            <div class="logo-subtitle">МЕЖДУНАРОДНАЯ ЮРИДИЧЕСКАЯ КОМПАНИЯ</div>
+          </div>
+        </a>
+            <p class="footer-mission">Официальное и полностью легальное оформление гражданства Евросоюза. Работаем строго по договору.</p>
+            <p class="reg-number" style="opacity: 0.7; margin-top: 10px;">A.S. CONSULTING COMPANY S.R.L.<br>CUI (Код Регистрации): 17839407</p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="/about">О компании</a></li>
+              <li><a href="/reviews">Отзывы клиентов</a></li>
+              <li><a href="/faq">Вопросы (FAQ)</a></li>
+              <li><a href="/contact">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h4>Наши Услуги</h4>
+            <ul>
+              <li><a href="#">Гражданство ЕС</a></li>
+              <li><a href="#">Гражданство США</a></li>
+              <li><a href="#">Гражданство Израиля</a></li>
+              <li><a href="#">Гражданство Азии</a></li>
+              <li><a href="#">ВНЖ / ПМЖ</a></li>
+            </ul>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list premium-icons">
+              <li title="Главный операционный офис"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Румыния: Victoria Business Center, Бухарест</li>
+              <li title="Представительство"><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span> Болгария: Crystal Business Center, София</li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span> <a href="mailto:eurostatus@ro.ru">eurostatus@ro.ru</a> <span style="font-size: 0.85em; opacity: 0.8;">(Для документов)</span></li>
+              <li><span class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> Пн-Пт: 10:00 - 19:00</li>
+              <li class="footer-socials" style="display: flex; gap: 15px; margin-top: 25px;">
+<a href="https://wa.me/40793707526" target="_blank" class="header-wa" title="Написать в WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://t.me/eurostatus_support" target="_blank" class="header-tg" title="Связаться в Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0-.11.03-1.9 1.21-5.37 3.56-.51.35-.97.52-1.38.51-.45-.01-1.31-.25-1.96-.46-.8-.26-1.43-.4-1.37-.85.03-.23.36-.47.98-.72 3.85-1.68 6.42-2.78 7.71-3.32 3.66-1.53 4.43-1.79 4.93-1.8.11 0 .36.03.5.15.11.1.15.22.16.32-.02.04-.02.13-.03.2z" fill="currentColor"/></svg></a>
+</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2026 EuroStatus. Все права защищены.</p>
+          <div class="legal-links">
+            <a href="/privacy">Политика конфиденциальности</a>
+            <a href="/terms">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    
+    <!-- Crisp Setup -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d4ad84eb-f3ba-484b-9485-a772c7601dc2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+<!-- Standardized Form JS -->
+<script>
+function customSelectOptionUnif(inputId, textId, menuId, wrapperId, value, text) {
+    var inp = document.getElementById(inputId);
+    if(inp) inp.value = value;
+    var txt = document.getElementById(textId);
+    if(txt) {
+        txt.innerText = text;
+        txt.style.color = '#ffffff';
+    }
+    var menu = document.getElementById(menuId);
+    if(menu) menu.classList.remove('show');
+    var trigger = document.querySelector('#' + wrapperId + ' .custom-select-trigger');
+    if(trigger) trigger.classList.remove('active');
+}
+document.addEventListener('click', function(e) {
+    var dropdowns = ['unif-dropdown-1', 'unif-dropdown-2'];
+    dropdowns.forEach(function(pid) {
+        var wrapper = document.getElementById(pid);
+        if (wrapper && !wrapper.contains(e.target)) {
+            var m = document.getElementById(pid.replace('dropdown', 'dropdown-menu'));
+            if(m) m.classList.remove('show');
+            var tr = document.querySelector('#' + pid + ' .custom-select-trigger');
+            if(tr) tr.classList.remove('active');
+        }
+    });
+});
+</script>
+
+
+<div class="modal-overlay" id="serviceModal" style="display: none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10000; overflow-y: auto;">
+<div class="modal-content" style="background: #0B2046; border-radius: 8px; position: relative; max-width: 850px; width: 95%; box-shadow: 0 20px 60px rgba(0,0,0,0.4); margin: auto;">
+<button onclick="closeServiceModal()" onmouseout="this.style.color='rgba(255,255,255,0.5)'" onmouseover="this.style.color='#fff'" style="position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.5); line-height: 1; transition: 0.3s; z-index: 2;">×</button>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch;">
+<!-- Left Info Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; justify-content: center;">
+<div class="modal-topic-badge" id="modal-service-name" style="display: inline-block; padding: 6px 14px; background: rgba(212,175,55,0.1); color: var(--gold-main); border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; width: fit-content; border: 1px solid rgba(212,175,55,0.2);">ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<h3 style="font-family: 'Times New Roman', serif; font-size: 2.2rem; color: #FFFFFF; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">Узнайте свои шансы<br/>на гражданство ЕС</h3>
+<p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6; margin: 0;">Оставьте заявку, и наш миграционный эксперт свяжется с вами для бесплатного аудита вашей ситуации или оценки наличия корней для репатриации.</p>
+</div>
+<!-- Right Form Side -->
+<div style="flex: 1; min-width: 300px; padding: 50px 40px; background: rgba(255,255,255,0.02);">
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px; height: 100%; justify-content: center;">
+    <style>
+        .dark-modal-input {
+            width: 100%; padding: 15px 18px; border-radius: 6px; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            font-size: 0.95rem; outline: none; box-sizing: border-box; 
+            color: #fff !important; transition: border-color 0.3s;
+        }
+        .dark-modal-input:focus { border-color: var(--gold-main) !important; }
+        .dark-modal-input::placeholder { color: rgba(255,255,255,0.5); }
+    </style>
+    <input class="dark-modal-input" name="name" placeholder="Ваше имя" required="" type="text"/>
+    <input class="dark-modal-input" name="phone" placeholder="Номер телефона" required="" type="tel"/>
+    <div class="custom-select-wrapper" id="unif-dropdown-2">
+        <input type="hidden" name="service_type" id="service_input_modal" required value="">
+        <div class="custom-select-trigger" onclick="document.getElementById('unif-dropdown-menu-2').classList.toggle('show'); this.classList.toggle('active');">
+            <span id="selected-service-text-2" style="color: rgba(255,255,255,0.5);">Какая услуга вас интересует?</span>
+            <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" opacity="0.5" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <div class="custom-select-menu" id="unif-dropdown-menu-2">
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Оформление гражданства ЕС', 'Оформление гражданства ЕС')">Оформление гражданства ЕС</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство США и Израиля', 'Гражданство США и Израиля')">Гражданство США и Израиля</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'ВНЖ / ПМЖ в Европе', 'ВНЖ / ПМЖ в Европе')">ВНЖ / ПМЖ в Европе</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Гражданство за инвестиции', 'Гражданство за инвестиции')">Гражданство за инвестиции</div>
+            <div class="custom-option" onclick="customSelectOptionUnif('service_input_modal','selected-service-text-2','unif-dropdown-menu-2','unif-dropdown-2', 'Индивидуальная консультация', 'Индивидуальная консультация')">Индивидуальная консультация</div>
+        </div>
+    </div>
+
+
+<script>
+    // Force mobile toggle visibility based on window width
+    function checkMobileMenuVisibility() {
+        const btn = document.querySelector('.mobile-toggle');
+        if(btn) {
+            if(window.innerWidth <= 1024) {
+                btn.style.setProperty('display', 'block', 'important');
+                btn.style.setProperty('background', 'transparent', 'important');
+                btn.style.setProperty('border', 'none', 'important');
+                btn.style.setProperty('color', '#D4AF37', 'important');
+                btn.style.setProperty('padding', '8px', 'important');
+                btn.style.setProperty('cursor', 'pointer', 'important');
+            } else {
+                btn.style.setProperty('display', 'none', 'important');
+            }
+        }
+    }
+    window.addEventListener('resize', checkMobileMenuVisibility);
+    document.addEventListener('DOMContentLoaded', checkMobileMenuVisibility);
+    checkMobileMenuVisibility();
+</script>
+
+</body>
+</html>
