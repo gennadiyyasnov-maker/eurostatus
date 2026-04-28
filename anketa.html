@@ -335,25 +335,25 @@
                         
                         <div class="grid-2-col">
                             <div class="person-block">
-                                <h4>Дедушка (по отцу)</h4>
+                                <h4>Дедушка по папиной линии</h4>
                                 <div class="input-group"><input type="text" name="gf_father_fio" placeholder="ФИО"></div>
                                 <div class="input-group"><input type="text" name="gf_father_birth" placeholder="Дата рождения"></div>
                                 <div class="input-group"><input type="text" name="gf_father_place" placeholder="Место рождения"></div>
                             </div>
                             <div class="person-block">
-                                <h4>Бабушка (по отцу)</h4>
+                                <h4>Бабушка по папиной линии</h4>
                                 <div class="input-group"><input type="text" name="gm_father_fio" placeholder="ФИО (вкл. девичью)"></div>
                                 <div class="input-group"><input type="text" name="gm_father_birth" placeholder="Дата рождения"></div>
                                 <div class="input-group"><input type="text" name="gm_father_place" placeholder="Место рождения"></div>
                             </div>
                             <div class="person-block">
-                                <h4>Дедушка (по маме)</h4>
+                                <h4>Дедушка по маминой линии</h4>
                                 <div class="input-group"><input type="text" name="gf_mother_fio" placeholder="ФИО"></div>
                                 <div class="input-group"><input type="text" name="gf_mother_birth" placeholder="Дата рождения"></div>
                                 <div class="input-group"><input type="text" name="gf_mother_place" placeholder="Место рождения"></div>
                             </div>
                             <div class="person-block">
-                                <h4>Бабушка (по маме)</h4>
+                                <h4>Бабушка по маминой линии</h4>
                                 <div class="input-group"><input type="text" name="gm_mother_fio" placeholder="ФИО (вкл. девичью)"></div>
                                 <div class="input-group"><input type="text" name="gm_mother_birth" placeholder="Дата рождения"></div>
                                 <div class="input-group"><input type="text" name="gm_mother_place" placeholder="Место рождения"></div>
@@ -393,9 +393,23 @@
                         </div>
                     </div>
 
-                    <!-- 6. Загрузка файлов -->
+                    <!-- 6. Пакет услуг -->
                     <div class="form-section">
-                        <h3>6. Прикрепление файлов</h3>
+                        <h3>6. Пакет услуг</h3>
+                        <div class="input-group">
+                            <label>Какой пакет услуг вас интересует? *</label>
+                            <select name="selected_package" required>
+                                <option value="Ускоренная подача Болгария (до 6 мес.) - 9,500 EUR">Ускоренная подача Болгария (до 6 мес.) - 9,500 EUR</option>
+                                <option value="Болгария (до 12 мес.) - 7,000 EUR">Болгария (до 12 мес.) - 7,000 EUR</option>
+                                <option value="Румыния (до 12 мес.) - 6,500 EUR">Румыния (до 12 мес.) - 6,500 EUR</option>
+                                <option value="Затрудняюсь ответить, нужна консультация">Затрудняюсь ответить, нужна консультация менеджера</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 7. Загрузка файлов -->
+                    <div class="form-section">
+                        <h3>7. Прикрепление файлов</h3>
                         <p style="font-size: 0.9rem; margin-bottom: 15px; color: #666;">Прикрепите сканы или качественные фото имеющихся документов. Мы гарантируем полную конфиденциальность.</p>
                         
                         <div class="file-upload-area" onclick="document.getElementById('file-input').click()">
@@ -501,7 +515,8 @@
                     text += `📜 <b>ПРАДЕДУШКИ / ПРАБАБУШКИ:</b>\n${fd.get('great_grandparents_info')}\n\n`;
                 }
 
-                text += `📁 <b>НАЛИЧИЕ ДОКУМЕНТОВ:</b>\n${docsList}\n`;
+                text += `📁 <b>НАЛИЧИЕ ДОКУМЕНТОВ:</b>\n${docsList}\n\n`;
+                text += `💼 <b>ПАКЕТ УСЛУГ:</b>\n${fd.get('selected_package')}\n`;
 
                 try {
                     // Отправка текстовых данных
