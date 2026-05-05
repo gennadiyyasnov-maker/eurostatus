@@ -10,7 +10,7 @@ const distDir = path.join(__dirname, 'dist');
 if (fs.existsSync(distDir)) {
   const files = fs.readdirSync(distDir);
   for (const file of files) {
-    if (file.endsWith('.html') && file !== 'index.html') {
+    if (file.endsWith('.html') && file !== 'index.html' && !file.startsWith('yandex_') && !file.startsWith('google')) {
       const name = file.replace('.html', '');
       const folder = path.join(distDir, name);
       if (!fs.existsSync(folder)) {
