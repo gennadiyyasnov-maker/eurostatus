@@ -146,4 +146,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Failsafe if translation takes too long or fails completely
         setTimeout(showContent, 1500);
     }
+
+    // Dynamic Phone Number Logic based on Language
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+        if (link.href.includes('+74951855706') || link.href.includes('+40725653896')) {
+            if (currentLang === 'en') {
+                link.href = 'tel:+40725653896';
+                link.innerHTML = '<img src="https://flagcdn.com/w20/ro.png" width="16" style="border-radius:2px;" alt="RO" class="notranslate"> Call us (+40 725 653 896)';
+            } else {
+                link.href = 'tel:+74951855706';
+                link.innerHTML = '<img src="https://flagcdn.com/w20/ru.png" width="16" style="border-radius:2px;" alt="RU" class="notranslate"> Позвонить нам (+7 495 185-57-06)';
+            }
+        }
+    });
 });
