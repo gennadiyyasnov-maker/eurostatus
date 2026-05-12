@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt - EuroStatus</title>
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            color: #2c3e50; 
+            margin: 0; 
+            padding: 40px; 
+            background: #eef2f5; 
+        }
+        .document { 
+            background: #fff; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 60px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            border-top: 8px solid #28a745; /* Green for payment confirmed */
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Make sure text stays above watermark */
+        .header, .content-box, .details-table, .footer {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Interactive Elements */
+        .editable {
+            border-bottom: 1px dashed #b0bec5;
+            background-color: #fcfcfc;
+            min-width: 20px;
+            display: inline-block;
+            outline: none;
+            padding: 0 4px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .editable:focus {
+            background-color: #e8f5e9;
+            border-bottom: 1px solid #28a745;
+        }
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            z-index: 1000;
+        }
+        .btn-print:hover { background: #1e7e34; }
+
+        /* Layout */
+        .header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 30px; margin-bottom: 40px; border-bottom: 1px solid #eceff1; }
+        .company-info { font-size: 14px; line-height: 1.6; color: #546e7a; }
+        .company-name { font-size: 22px; font-weight: bold; color: #0f2e4a; margin-bottom: 8px; letter-spacing: 0.5px; }
+        
+        .title-box { text-align: right; }
+        .title { font-size: 32px; font-weight: bold; color: #28a745; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .receipt-no { font-size: 15px; color: #546e7a; margin-bottom: 5px; }
+        
+        .content-box { background: #f8f9fa; padding: 35px; border-radius: 8px; margin-bottom: 40px; font-size: 16px; line-height: 1.6; border: 1px solid #eceff1; }
+        .amount-highlight { font-size: 42px; font-weight: bold; color: #28a745; display: block; margin: 25px 0 10px 0; text-align: center; }
+        
+        .details-table { width: 100%; border-collapse: collapse; margin-bottom: 50px; font-size: 15px; }
+        .details-table td { padding: 15px; border-bottom: 1px solid #eceff1; }
+        .details-table td:first-child { font-weight: bold; width: 35%; color: #455a64; }
+        
+        .footer { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 50px; }
+        .stamp-area { width: 150px; height: 150px; border: 2px dashed #b0bec5; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; color: #90a4ae; font-size: 12px; transform: rotate(-15deg); font-weight: bold; }
+        .signature-box { width: 250px; text-align: center; font-size: 15px; color: #455a64; }
+        .signature-line { border-bottom: 1px solid #0f2e4a; margin-bottom: 10px; height: 50px; }
+
+        @media print {
+            body { background: #fff; padding: 0; -webkit-print-color-adjust: exact; }
+            .document { box-shadow: none; padding: 0; max-width: 100%; border-top: 8px solid #28a745; }
+            .no-print { display: none !important; }
+            .editable { border: none; background: transparent; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-print no-print" onclick="window.print()">🖨 Save as PDF</button>
+
+    <div class="document">
+        <div class="header">
+            <div class="company-info">
+                <div class="company-name">A.S. TOP ISO CONSULTING SRL</div>
+                Str. Eliberarii 25 Bl. IV28 Sc. B Ap. 27<br>
+                Cod 900257, Romania<br>
+                Reg. No: J03/1385/2014<br>
+                CUI / VAT: 33730451<br>
+                Email: info@eurostatus.com
+            </div>
+            <div class="title-box">
+                <div class="title">OFFICIAL RECEIPT</div>
+                <div class="receipt-no">Receipt No: <span class="editable" contenteditable="true">REC-2026-3924</span></div>
+                <div class="receipt-no">Date: <span class="editable" contenteditable="true">07.05.2026</span></div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            This document confirms that <strong>A.S. TOP ISO CONSULTING SRL</strong> has successfully received the payment from the Client. The Client's financial obligations for this stage of the contract are fully met.
+            
+            <div class="amount-highlight">
+                <span class="editable" contenteditable="true">€3,000.00 EUR</span>
+            </div>
+        </div>
+
+        <table class="details-table">
+            <tr>
+                <td>Received From:</td>
+                <td><strong class="editable" contenteditable="true">BLOKHIN VITALIY</strong></td>
+            </tr>
+            <tr>
+                <td>Contract Reference:</td>
+                <td>No. <span class="editable" contenteditable="true">3924</span> dated <span class="editable" contenteditable="true">05.05.2026</span></td>
+            </tr>
+            <tr>
+                <td>Payment For:</td>
+                <td><span class="editable" contenteditable="true">Advance payment for legal and archival services</span></td>
+            </tr>
+            <tr>
+                <td>Payment Status:</td>
+                <td><strong style="color: #28a745;">PAID IN FULL (Stage 1)</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <div class="stamp-area">
+                PLACE COMPANY<br>STAMP HERE
+            </div>
+            <div class="signature-box">
+                <div class="signature-line"></div>
+                Receanu Liliana Cristina<br>
+                Director / Authorized Signatory<br>
+                <strong>A.S. TOP ISO CONSULTING SRL</strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

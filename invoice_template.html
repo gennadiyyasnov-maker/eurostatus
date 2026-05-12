@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proforma Invoice - EuroStatus</title>
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            color: #2c3e50; 
+            margin: 0; 
+            padding: 40px; 
+            background: #eef2f5; 
+        }
+        .document { 
+            background: #fff; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 60px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            border-top: 8px solid #0f2e4a; /* Dark blue */
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Make sure text stays above watermark */
+        .header, .details-grid, table, .payment-info, .footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Interactive Elements */
+        .editable {
+            border-bottom: 1px dashed #b0bec5;
+            background-color: #fcfcfc;
+            min-width: 20px;
+            display: inline-block;
+            outline: none;
+            padding: 0 4px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .editable:focus {
+            background-color: #e3f2fd;
+            border-bottom: 1px solid #0f2e4a;
+        }
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #0f2e4a;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            z-index: 1000;
+        }
+        .btn-print:hover { background: #1a4269; }
+
+        /* Layout */
+        .header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 30px; margin-bottom: 40px; }
+        .company-info { font-size: 14px; line-height: 1.6; color: #546e7a; }
+        .company-name { font-size: 22px; font-weight: bold; color: #0f2e4a; margin-bottom: 8px; letter-spacing: 0.5px; }
+        .title { font-size: 32px; font-weight: bold; color: #0f2e4a; text-align: right; letter-spacing: 1px; }
+        
+        .details-grid { display: flex; justify-content: space-between; margin-bottom: 40px; }
+        .bill-to, .invoice-info { width: 45%; font-size: 15px; line-height: 1.6; }
+        h3 { color: #8c9eff; border-bottom: 1px solid #eceff1; padding-bottom: 5px; margin-bottom: 15px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Table Layout Fixes */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 40px; font-size: 15px; table-layout: fixed; }
+        th, td { padding: 15px 10px; border-bottom: 1px solid #eceff1; }
+        th { background: #f8f9fa; color: #0f2e4a; font-weight: 600; border-bottom: 2px solid #cfd8dc; }
+        
+        /* Column Widths */
+        .col-desc { width: 55%; text-align: left; }
+        .col-qty { width: 10%; text-align: center; }
+        .col-price { width: 17.5%; text-align: right; }
+        .col-amount { width: 17.5%; text-align: right; }
+
+        .total-row td { font-weight: bold; font-size: 18px; border-top: 2px solid #0f2e4a; color: #0f2e4a; }
+        .text-right { text-align: right; }
+        .text-center { text-align: center; }
+        
+        .payment-info { background: #f8f9fa; padding: 25px; border-left: 4px solid #0f2e4a; margin-bottom: 40px; font-size: 14px; line-height: 1.6; color: #455a64; }
+        
+        .footer { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 60px; font-size: 14px; color: #546e7a; }
+        .signature-box { width: 250px; text-align: center; }
+        .signature-line { border-bottom: 1px solid #0f2e4a; margin-bottom: 10px; height: 50px; }
+
+        @media print {
+            body { background: #fff; padding: 0; -webkit-print-color-adjust: exact; }
+            .document { box-shadow: none; padding: 0; max-width: 100%; border-top: 8px solid #0f2e4a; }
+            .no-print { display: none !important; }
+            .editable { border: none; background: transparent; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-print no-print" onclick="window.print()">🖨 Save as PDF</button>
+
+    <div class="document">
+        <div class="header">
+            <div class="company-info">
+                <div class="company-name">A.S. TOP ISO CONSULTING SRL</div>
+                Str. Eliberarii 25 Bl. IV28 Sc. B Ap. 27<br>
+                Cod 900257, Romania<br>
+                Reg. No: J03/1385/2014<br>
+                CUI / VAT: 33730451<br>
+                Email: info@eurostatus.com
+            </div>
+            <div class="title">
+                PROFORMA INVOICE
+            </div>
+        </div>
+
+        <div class="details-grid">
+            <div class="bill-to">
+                <h3>Bill To:</h3>
+                <strong class="editable" contenteditable="true">BLOKHIN VITALIY</strong><br>
+                Passport: <span class="editable" contenteditable="true">03 23 726451</span><br>
+                Address: <span class="editable" contenteditable="true">Russia, Krasnodar, Dementiya Krasyuka st. 49, ap. 11</span><br>
+                Phone: <span class="editable" contenteditable="true">+7 (918) 482-00-47</span>
+            </div>
+            <div class="invoice-info">
+                <h3>Invoice Details:</h3>
+                <strong>Invoice No:</strong> <span class="editable" contenteditable="true">PRF-2026-3924</span><br>
+                <strong>Date:</strong> <span class="editable" contenteditable="true">07.05.2026</span><br>
+                <strong>Due Date:</strong> <span class="editable" contenteditable="true">10.05.2026</span><br>
+                <strong>Contract:</strong> No. <span class="editable" contenteditable="true">3924</span> from <span class="editable" contenteditable="true">05.05.2026</span>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-desc">Description of Services</th>
+                    <th class="col-qty">Qty</th>
+                    <th class="col-price">Price</th>
+                    <th class="col-amount">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-desc">
+                        <strong>Advance payment for legal and archival services</strong><br>
+                        <small style="color: #546e7a;">Preparation and submission of documents for obtaining citizenship</small>
+                    </td>
+                    <td class="col-qty"><span class="editable" contenteditable="true">1</span></td>
+                    <td class="col-price"><span class="editable" contenteditable="true">€3,000.00</span></td>
+                    <td class="col-amount"><span class="editable" contenteditable="true">€3,000.00</span></td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3" class="text-right">TOTAL (EUR):</td>
+                    <td class="text-right"><span class="editable" contenteditable="true">€3,000.00</span></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-right" style="border: none; padding-top: 5px; font-size: 12px; color: #546e7a;">VAT: 0% (Non-EU resident reverse charge)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="payment-info">
+            <strong>Payment Instructions:</strong><br><br>
+            Due to current banking restrictions, direct SWIFT transfers are temporarily unavailable.<br>
+            <strong>Payment Method:</strong> Local authorized agent transfer (Russia).<br>
+            Payment details will be provided additionally by your manager via a secure communication channel.<br>
+            <em>An official Payment Receipt will be issued immediately upon confirmation of funds.</em>
+        </div>
+
+        <div class="footer">
+            <div class="notes">
+                Thank you for your business!<br>
+                <strong>A.S. TOP ISO CONSULTING SRL</strong>
+            </div>
+            <div class="signature-box">
+                <div class="signature-line"></div>
+                Receanu Liliana Cristina<br>
+                Authorized Signature / Stamp
+            </div>
+        </div>
+    </div>
+</body>
+</html>

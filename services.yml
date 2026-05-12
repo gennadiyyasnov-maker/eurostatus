@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-05-13 00:00">
+  <shop>
+    <name>EuroStatus</name>
+    <company>EuroStatus</company>
+    <url>https://eurostatus.online/</url>
+    <currencies>
+      <currency id="EUR" rate="1"/>
+    </currencies>
+    <categories>
+      <category id="1">Гражданство ЕС</category>
+      <category id="2">Консультации</category>
+    </categories>
+    <offers>
+      <offer id="1">
+        <name>Гражданство Румынии</name>
+        <price>6500</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Официальное оформление гражданства Румынии. Срок: от 5 до 12 месяцев. Поиск корней, подготовка досье, подача в Министерство юстиции в Бухаресте, сдача присяги.</description>
+      </offer>
+      <offer id="2">
+        <name>Гражданство Болгарии</name>
+        <price>7000</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Официальное оформление гражданства Болгарии. Срок: от 5 до 12 месяцев. Подтверждение происхождения, личная подача досье в Софии, подготовка к интервью.</description>
+      </offer>
+      <offer id="3">
+        <name>Гражданство Польши</name>
+        <price>9000</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Оформление гражданства Польши. Срок: от 5 до 12 месяцев. Поиск документального подтверждения польского происхождения, подача в консульство.</description>
+      </offer>
+      <offer id="4">
+        <name>Гражданство Германии</name>
+        <price>10000</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Оформление паспорта Германии по программе Поздних переселенцев (BVFG). Срок: от 5 до 7 месяцев. Юридический аудит и построение родовой линии.</description>
+      </offer>
+      <offer id="5">
+        <name>Гражданство Словении</name>
+        <price>10500</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Легальное оформление гражданства Словении. Срок: от 5 до 12 месяцев. Подготовка документов, подтверждающих корни, сопровождение на всех этапах.</description>
+      </offer>
+      <offer id="6">
+        <name>Гражданство Греции</name>
+        <price>11500</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>1</categoryId>
+        <description>Оформление гражданства Греции. Срок: от 5 до 12 месяцев. Глубокий анализ документов аудиторами, истребование свидетельств из греческих архивов.</description>
+      </offer>
+      <offer id="7">
+        <name>Бесплатная консультация миграционного юриста</name>
+        <price>0</price>
+        <currencyId>EUR</currencyId>
+        <categoryId>2</categoryId>
+        <description>Детальный разбор вашей ситуации, оценка шансов на получение паспорта Евросоюза и подбор оптимальной легальной программы.</description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
