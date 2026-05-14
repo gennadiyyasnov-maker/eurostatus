@@ -9,7 +9,8 @@ html_content = """<!DOCTYPE html>
     <title>У меня нет корней: мифы и реальность архивного поиска | EuroStatus</title>
     <meta name="description" content="Узнайте, почему отсутствие информации о корнях не является преградой для получения гражданства ЕС. Как работают архивные юристы и почему 90% граждан СНГ имеют законные основания.">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
     
     <script type="application/ld+json">
     {
