@@ -153,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (link.href.includes('+74951855706') || link.href.includes('+40725653896')) {
             if (currentLang === 'en') {
                 link.href = 'tel:+40725653896';
-                link.innerHTML = 'Call us';
+                link.innerHTML = 'Call us (+40 725 653 896)';
             } else {
                 link.href = 'tel:+74951855706';
-                link.innerHTML = 'Позвонить';
+                link.innerHTML = 'Позвонить нам (+7 495 185-57-06)';
             }
         }
     });
